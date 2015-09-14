@@ -1,0 +1,133 @@
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  padding: 4px 8px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2); }
+
+input.form-control {
+  margin: 2px;
+  outline-width: 2px; }
+
+.btn {
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  background: linear-gradient(to bottom, #CACBCD, #babcbe); }
+  .btn:hover {
+    background: linear-gradient(to bottom, #babcbe, #CACBCD); }
+  .btn.btn-primary {
+    border: 2px solid #fd7907;
+    background: linear-gradient(to bottom, #FD8925, #fd7907); }
+    .btn.btn-primary:hover {
+      background: linear-gradient(to bottom, #fd7907, #FD8925); }
+  .btn.btn-small {
+    font-size: 12px; }
+
+.root-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.7); }
+
+.clearfix, header .top-nav .clear-login {
+  display: inline-block; }
+  .clearfix:after, header .top-nav .clear-login:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+
+.page-container {
+  max-width: 980px;
+  margin: 0 auto; }
+
+header .top-nav {
+  background-color: #CCC; }
+  header .top-nav .clear-login {
+    width: 100%; }
+header .brand {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px 0;
+  margin-right: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  header .brand .geek {
+    background-color: #FD8925;
+    color: white;
+    padding: 3px; }
+header .search-form {
+  display: inline-block;
+  margin-left: 15%; }
+header .login-form {
+  display: inline-block;
+  float: right; }
+  header .login-form input {
+    font-size: 12px; }
+  header .login-form button {
+    min-width: 60px; }
+  header .login-form .top-anchor {
+    background-color: #6E6E70;
+    padding: 16px 10px 12px;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.6); }
+header nav {
+  background-color: white;
+  padding-bottom: 20px; }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto; }
+  header nav li {
+    display: inline-block;
+    width: 14.28571%; }
+  header nav .highlight {
+    display: block;
+    height: 8px;
+    margin-top: -8px;
+    background-color: #CCC; }
+  header nav .label {
+    display: block;
+    padding: 8px;
+    text-align: center; }
+  header nav a, header nav a:visited, header nav a:link, header nav a:hover {
+    text-decoration: none;
+    color: black; }
+  header nav a:hover {
+    color: #FD8925; }
+    header nav a:hover .highlight {
+      background-color: #FD8925; }
+
+.hero-container .carousel {
+  background: radial-gradient(farthest-corner at 20% 40%, #feb271, #fd7907);
+  height: 400px; }
+  .hero-container .carousel .controls {
+    margin: 0 auto;
+    padding-top: 12px;
+    width: 100px;
+    text-align: center; }
+    .hero-container .carousel .controls .item {
+      display: inline-block;
+      margin: 0 5px;
+      height: 12px;
+      width: 12px;
+      cursor: pointer; }
+      .hero-container .carousel .controls .item .control {
+        background-color: #fedbbd;
+        border-radius: 5px;
+        height: 10px;
+        width: 10px;
+        content: " "; }
+      .hero-container .carousel .controls .item:hover .control {
+        background-color: white; }
+  .hero-container .carousel .left-arrow {
+    width: 10%; }
+  .hero-container .carousel .right-arrow {
+    width: 10%; }
+  .hero-container .carousel .content {
+    width: 80%; }

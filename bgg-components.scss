@@ -1,0 +1,40 @@
+@import 'bgg-properties';
+
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    padding: 4px 8px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+    
+}
+input.form-control {
+    margin: 2px;
+    outline-width: 2px;
+}
+
+.btn {
+    color: white;
+    border-radius: 8px;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    $grey: #CACBCD;
+    $darkgrey: darken($grey, 6%);
+    background: linear-gradient(to bottom, $grey, $darkgrey);
+    
+    &:hover {
+        background: linear-gradient(to bottom, $darkgrey, $grey);
+    }
+
+    &.btn-primary {
+        border: 2px solid $geek-darkorange;
+        background: linear-gradient(to bottom, $geek-orange, $geek-darkorange);
+        &:hover {
+            background: linear-gradient(to bottom, $geek-darkorange, $geek-orange);
+        }
+    }
+    
+    &.btn-small {
+        font-size: 12px;
+    }
+}

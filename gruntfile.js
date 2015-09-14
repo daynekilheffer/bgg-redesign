@@ -37,7 +37,7 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     port: process.env.C9_PORT || 3000,
-                    base: ['dist', 'src']
+                    base: ['dist', '.']
                 }
             }
         }

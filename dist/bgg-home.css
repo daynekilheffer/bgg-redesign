@@ -109,11 +109,15 @@ header nav {
 
 .hero-container .carousel {
   background: radial-gradient(farthest-corner at 20% 40%, #feb271, #fd7907);
-  height: 400px; }
+  height: 400px;
+  position: relative; }
   .hero-container .carousel .controls {
-    margin: 0 auto;
-    padding-top: 12px;
-    text-align: center; }
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+    text-align: center;
+    top: 12px; }
     .hero-container .carousel .controls .item {
       display: inline-block;
       margin: 0 2px;
@@ -129,11 +133,30 @@ header nav {
         content: " "; }
       .hero-container .carousel .controls .item:hover .control, .hero-container .carousel .controls .item.active .control {
         background-color: white; }
-  .hero-container .carousel .left-arrow {
-    width: 10%; }
-  .hero-container .carousel .right-arrow {
-    width: 10%; }
+  .hero-container .carousel .arrow {
+    font-family: monospace;
+    font-size: 60px;
+    width: 36px;
+    color: #fedbbd;
+    position: absolute;
+    top: 0;
+    bottom: 0; }
+    .hero-container .carousel .arrow:hover {
+      color: white;
+      cursor: pointer; }
+    .hero-container .carousel .arrow:before {
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      margin-top: -36px; }
+    .hero-container .carousel .arrow.left:before {
+      content: '\2039'; }
+    .hero-container .carousel .arrow.right {
+      right: 0;
+      left: auto; }
+      .hero-container .carousel .arrow.right:before {
+        content: '\203a'; }
   .hero-container .carousel .content {
-    width: 80%; }
+    width: 100%; }
 
 /*# sourceMappingURL=bgg-home.css.map */

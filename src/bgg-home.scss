@@ -113,11 +113,16 @@ header {
     .carousel {
         background: radial-gradient(farthest-corner at 20% 40%, lighten($geek-primary, 15%), $geek-dark-primary);
         height: 400px;
+        position: relative;
         
         .controls {
-            margin: 0 auto;
-            padding-top: 12px;
+            $controls-width: 50%;
+            position: absolute;
+            width: $controls-width;
+            left: $controls-width;
+            margin-left: -$controls-width/2;
             text-align: center;
+            top: 12px;
             
             .item {
                 display: inline-block;
@@ -140,14 +145,43 @@ header {
                 }
             }
         }
-        .left-arrow {
-            width: 10%;
-        }
-        .right-arrow {
-            width: 10%;
+        .arrow {
+            font-family: monospace;
+            font-size: 60px;
+            width: 36px;
+            color: lighten($geek-primary, 30%);
+            &:hover {
+                color: lighten($geek-primary, 45%);
+                cursor: pointer;
+            }
+            
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            
+            &:before {
+                position: absolute;
+                top: 50%;
+                display: inline-block;
+                margin-top: -36px;
+            }
+        
+            &.left {
+                &:before {
+                    content: '\2039';
+                }
+            }
+            &.right {
+                right: 0;
+                left: auto;
+                &:before {
+                    content: '\203a';
+                }
+            }
         }
         .content {
-            width: 80%;
+            
+            width: 100%;
         }
     }
 }

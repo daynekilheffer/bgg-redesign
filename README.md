@@ -15,4 +15,3 @@ support
 
 ###todo
 1. need a responsive treatment
-2. integrate a build system instead of this cli nonsense

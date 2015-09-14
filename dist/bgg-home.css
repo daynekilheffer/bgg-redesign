@@ -47,6 +47,7 @@ header .top-nav {
   background-color: #CCC; }
   header .top-nav .clear-login {
     width: 100%; }
+
 header .brand {
   display: inline-block;
   font-family: 'Roboto', sans-serif;
@@ -59,9 +60,11 @@ header .brand {
     background-color: #FD8925;
     color: white;
     padding: 3px; }
+
 header .search-form {
   display: inline-block;
   margin-left: 15%; }
+
 header .login-form {
   display: inline-block;
   float: right; }
@@ -75,6 +78,7 @@ header .login-form {
     border-bottom-right-radius: 18px;
     border-bottom-left-radius: 18px;
     box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.6); }
+
 header nav {
   background-color: white;
   padding-bottom: 20px; }
@@ -85,7 +89,7 @@ header nav {
     margin: 0 auto; }
   header nav li {
     display: inline-block;
-    width: 14.28571%; }
+    width: 14.2857142857%; }
   header nav .highlight {
     display: block;
     height: 8px;
@@ -116,7 +120,8 @@ header nav {
       margin: 0 5px;
       height: 12px;
       width: 12px;
-      cursor: pointer; }
+      cursor: pointer;
+      content: " "; }
       .hero-container .carousel .controls .item .control {
         background-color: #fedbbd;
         border-radius: 5px;
@@ -131,3 +136,5 @@ header nav {
     width: 10%; }
   .hero-container .carousel .content {
     width: 80%; }
+
+/*# sourceMappingURL=bgg-home.css.map */

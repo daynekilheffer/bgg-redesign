@@ -7,7 +7,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/bgg-home.css': 'bgg-home.scss'
+                    'dist/bgg-home.css': 'src/bgg-home.scss'
                 }
             }
         },
@@ -19,17 +19,17 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    "dist/bgg-home.html": ["bgg-home.jade"]
+                    'dist/bgg-home.html': ['src/bgg-home.jade']
                 }
             }
         },
         watch: {
             markup: {
-                files: '**/*.jade',
+                files: 'src/**/*.jade',
                 tasks: ['jade']
             },
             styles: {
-                files: '**/*.scss',
+                files: 'src/**/*.scss',
                 tasks: ['sass']
             }
         }

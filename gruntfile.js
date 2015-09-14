@@ -32,13 +32,23 @@ module.exports = function(grunt) {
                 files: 'src/**/*.scss',
                 tasks: ['sass']
             }
+        },
+        connect: {
+            server: {
+                options: {
+                    port: process.env.C9_PORT || 3000,
+                    base: 'dist'
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-jade');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-sass');
 
+    grunt.registerTask('serve', ['connect', 'watch'])
     grunt.registerTask('default', ['sass', 'jade']);
 
 };

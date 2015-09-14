@@ -1,0 +1,15 @@
+{
+  "name": "bgg-home-redesign",
+  "version": "1.0.0",
+  "description": "redesign of board game geek",
+  "main": "index.js",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.0.0",
+    "node-sass": "^3.3.2"
+  },
+  "author": "dayne m kilheffer",
+  "license": "ISC"
+}

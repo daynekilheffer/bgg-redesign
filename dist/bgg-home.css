@@ -50,16 +50,16 @@ header .top-nav {
 
 header .brand {
   display: inline-block;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   padding: 40px 0;
   margin-right: 30px;
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px; }
   header .brand .geek {
-    background-color: #FD8925;
     color: white;
-    padding: 3px; }
+    padding: 3px;
+    background-color: #FD8925; }
 
 header .search-form {
   display: inline-block;
@@ -113,11 +113,10 @@ header nav {
   .hero-container .carousel .controls {
     margin: 0 auto;
     padding-top: 12px;
-    width: 100px;
     text-align: center; }
     .hero-container .carousel .controls .item {
       display: inline-block;
-      margin: 0 5px;
+      margin: 0 2px;
       height: 12px;
       width: 12px;
       cursor: pointer;
@@ -128,7 +127,7 @@ header nav {
         height: 10px;
         width: 10px;
         content: " "; }
-      .hero-container .carousel .controls .item:hover .control {
+      .hero-container .carousel .controls .item:hover .control, .hero-container .carousel .controls .item.active .control {
         background-color: white; }
   .hero-container .carousel .left-arrow {
     width: 10%; }

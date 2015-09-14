@@ -27,10 +27,10 @@ input.form-control {
     }
 
     &.btn-primary {
-        border: 2px solid $geek-darkorange;
-        background: linear-gradient(to bottom, $geek-orange, $geek-darkorange);
+        border: 2px solid $geek-dark-primary;
+        background: linear-gradient(to bottom, $geek-primary, $geek-dark-primary);
         &:hover {
-            background: linear-gradient(to bottom, $geek-darkorange, $geek-orange);
+            background: linear-gradient(to bottom, $geek-dark-primary, $geek-primary);
         }
     }
     

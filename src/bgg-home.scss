@@ -37,7 +37,7 @@ header {
     }
     .brand {
         display: inline-block;
-        font-family: 'Roboto', sans-serif;
+        font-family: sans-serif;
         padding: 40px 0;
         margin-right: 30px;
         font-size: 22px;
@@ -45,9 +45,9 @@ header {
         letter-spacing: 1px;
         
         .geek {
-            background-color: $geek-orange;
             color: white;
             padding: 3px;
+            background-color: $geek-primary;
         }
     }
     .search-form {
@@ -101,9 +101,9 @@ header {
             color: black;
         }
         a:hover {
-            color: $geek-orange;
+            color: $geek-primary;
             .highlight {
-                background-color: $geek-orange;
+                background-color: $geek-primary;
             }
         }
     }
@@ -111,33 +111,32 @@ header {
 
 .hero-container {
     .carousel {
-        background: radial-gradient(farthest-corner at 20% 40%, lighten($geek-orange, 15%), $geek-darkorange);
+        background: radial-gradient(farthest-corner at 20% 40%, lighten($geek-primary, 15%), $geek-dark-primary);
         height: 400px;
         
         .controls {
             margin: 0 auto;
             padding-top: 12px;
-            width: 100px;
             text-align: center;
             
             .item {
                 display: inline-block;
-                margin: 0 5px;
+                margin: 0 2px;
                 height: 12px;
                 width: 12px;
                 cursor: pointer;
                 content: " ";
                 
                 .control {
-                    background-color: lighten($geek-orange, 30%);
+                    background-color: lighten($geek-primary, 30%);
                     border-radius: 5px;
                     height: 10px;
                     width: 10px;
                     content: " ";
                 }
                 
-                &:hover .control {
-                    background-color: lighten($geek-orange, 45%);
+                &:hover .control, &.active .control {
+                    background-color: lighten($geek-primary, 45%);
                 }
             }
         }

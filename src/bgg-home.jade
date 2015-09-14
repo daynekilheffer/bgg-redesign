@@ -3,7 +3,6 @@ html(lang="en")
     head
         title BGG - Home
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
         link(rel="stylesheet", href="bgg-home.css")
     body
         .root-container
@@ -39,12 +38,9 @@ html(lang="en")
                     .page-container
                         .carousel
                             .controls
-                                .item
-                                    .control
-                                .item
-                                    .control
-                                .item
-                                    .control
+                                each _ in [1, 2, 3, 4, 5]
+                                    .item
+                                        .control
                             .left-arrow
                             .content
                             .right-arrow

@@ -1,0 +1,110 @@
+{
+    "navigation": {
+        "items": ["Home", "Browse", "Forums", "GeekList", "Bazaar", "Misc", "Help"]
+    },
+    "carousel": {
+        "controls": [null, null, null, null]
+    },
+    "columns": [
+        {
+            "type": "forum",
+            "title": "<strong>news</strong>headlines",
+            "items": [
+                {
+                    "href": "#",
+                    "linkableTitle": "<strong>iOS Board Games</strong> Live Stream: XCOM:",
+                    "title": "Enemy Within with chat about XCOM: TBG",
+                    "subText": "by: Bradley Cummings, Editor"
+                },
+                {
+                    "href": "#",
+                    "linkableTitle": "<strong>BoardGameGeek News</strong> Lost Cities Returns to the U.S. Market;",
+                    "title": "Other Kosmos Titles to Appear, Too",
+                    "subText": "by: Bradley Cummings, Editor"
+                },
+                {
+                    "href": "#",
+                    "linkableTitle": "<strong>BoardGameGeek News</strong> Crowdfunding Round-up:",
+                    "title": "Drugs and Deities, Hyborians and Hepcats, Cones and Cadets & Yes, Exploding Kittens, Too",
+                    "subText": "by: W. Eric Martin"
+                },
+                {
+                    "href": "#",
+                    "linkableTitle": "<strong>The Geek Weekly</strong>Golden Geek and Cosmic Encounters",
+                    "title": "- The Geek Weekly Issue #50",
+                    "subText": "by: Bradley Cummings"
+                }
+            ]
+        },
+        {
+            "type": "forum",
+            "title": "<strong>contests</strong>",
+            "items": [
+                {
+                    "href": "#",
+                    "linkableTitle": "Contest! WINNERS!",
+                    "title": "Game Designers Clubhouse \"<strong>Swinging Jivecat Voodoo Lounge</strong>\" [Page 1,2]"
+                },
+                {
+                    "href": "#",
+                    "title": "Tasty Minstrel Games \"<strong>Orleans</strong>\" Contest! [Page 1,2,3,4,5,6,7]"
+                },
+                {
+                    "href": "#",
+                    "title": "Queen Games \"<strong>Wallenstein: The 30 Years' War</strong>\" Contest! [Page 1,2,3,4]"
+                },
+                {
+                    "href": "#",
+                    "linkableTitle": "Contest! WINNERS!",
+                    "title": "NSKN Games \"<strong>Exodus: Edge of Extinction</strong>\" [Page 1,2]"
+                },
+                {
+                    "href": "#",
+                    "linkableTitle": "Contest! WINNERS!",
+                    "title": "Smirk & Dagger Games \"__Student Bodies__\" [Page 1,2]"
+                }
+            ]
+        },
+        {
+            "type": "lists",
+            "title": "the<strong>hotness</strong>",
+            "lists": [
+                {
+                    "name": "GAMES",
+                    "active": true,
+                    "items": [
+                        "Above and Below",
+                        "XCOM : The Board Game",
+                        "Star Wards: Imperial Assualt",
+                        "The Settlers of Catan",
+                        "Dead of Winter: A Crossroads Games",
+                        "Small World Designer Edition",
+                        "Conan",
+                        "Trickerion: Legends of Illusion",
+                        "Roll for the Galaxy",
+                        "Dungeons & Dragons: Temple of Elemental Evil Board Game",
+                        "Android: Netrunner",
+                        "Sheriff of Nottingham",
+                        "Shadows of Brimstone: City of Ancients",
+                        "Terra Mystica",
+                        "Cthulhi Wars",
+                        "Star Wars: X-Wing Miniatures Game",
+                        "Stronghold",
+                        "AquaSphere",
+                        "Mage Knight Board Game",
+                        "Alchemists",
+                        "Robinson Crusoe: Adventure on Cursed Island",
+                        "Twilight Struggle",
+                        "The Lord of the Rings: The Card Game"
+                    ]
+                },
+                {
+                    "name": "PEOPLE"
+                },
+                {
+                    "name": "COMPANY"
+                }
+            ]
+        }
+    ]
+}

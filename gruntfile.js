@@ -14,9 +14,7 @@ module.exports = function(grunt) {
         jade: {
             compile: {
                 options: {
-                    data: {
-                        debug: false
-                    }
+                    data: require('./input-data.json')
                 },
                 files: {
                     'dist/bgg-home.html': ['src/bgg-home.jade']
@@ -25,7 +23,7 @@ module.exports = function(grunt) {
         },
         watch: {
             markup: {
-                files: 'src/**/*.jade',
+                files: ['src/**/*.jade', 'input-data.json'],
                 tasks: ['jade']
             },
             styles: {
@@ -48,7 +46,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-sass');
 
-    grunt.registerTask('serve', ['connect', 'watch'])
-    grunt.registerTask('default', ['sass', 'jade']);
+    grunt.registerTask('build', ['sass', 'jade'])
+    grunt.registerTask('serve', ['build', 'connect', 'watch'])
+    grunt.registerTask('default', ['build']);
 
 };

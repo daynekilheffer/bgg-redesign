@@ -1,3 +1,4 @@
+@import 'reset';
 @import 'bgg-components';
 @import 'bgg-properties';
 
@@ -7,6 +8,7 @@ $pageWidth: 980px;
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 3px 3px 14px 0px rgba(0,0,0,0.7);
+    font-size: 14px;
 }
 
 .clearfix {
@@ -110,6 +112,9 @@ header {
 }
 
 .hero-container {
+    
+    margin-bottom: 30px;
+    
     .carousel {
         background: radial-gradient(farthest-corner at 20% 40%, lighten($geek-primary, 15%), $geek-dark-primary);
         height: 400px;
@@ -182,6 +187,92 @@ header {
         .content {
             
             width: 100%;
+        }
+    }
+}
+
+.list-container {
+    background: url(https://cf.geekdo-images.com/images/pic355125_lg.jpg) fixed;
+    background-size: cover;
+    padding: 20px 0;
+    
+    a, a:visited, a:active {
+        color: $geek-primary;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $geek-dark-primary;
+    }
+    
+    
+    .columns {
+        display: table;
+    }
+    
+    .column-container {
+        display: table-cell;
+        vertical-align: top;
+        width: 33%;
+        padding-left: 3%;
+        &:first-child {
+            padding-left: 0%;
+        }
+    }
+    
+    .column {
+        
+        > .title {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            opacity: 0.8;
+            margin-bottom: 12px;
+            padding: 8px 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .content {
+            background-color: white;
+            padding: 12px;
+            box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.6);
+            
+            .subtitle {
+                display: table;
+                width: 100%;
+                padding-bottom: 8px;
+                margin-bottom: 8px;
+                border-bottom: 1px solid #bbb;
+                & > .subitem {
+                    display: table-cell;
+                    text-align: center;
+                    &.active {
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+            .item {
+                padding-top: 8px;
+                margin-top: 8px;
+                border-top: 1px solid #bbb;
+                &:first-child {
+                    padding-top: 0;
+                    margin-top: 0;
+                    border-top: 0px;
+                }
+            }
+            .sub-text {
+                font-size: 12px;
+            }
+            
+            .list-content {
+                -webkit-column-count: 2;
+                column-count: 2;
+                list-style: disc;
+                list-style-position: inside;
+                font-size: 12px;
+            }
         }
     }
 }

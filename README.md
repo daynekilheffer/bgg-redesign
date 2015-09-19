@@ -9,9 +9,9 @@ support
 - http://getbootstrap.com/css/#buttons
 
 
-###bugs
+### bugs
 
 1. giving focus to input's causes the outline to appear which doesn't conform to the border-radius.  Bootstrap handles this by removing the outline and putting a box-shadow around the input field
 
-###todo
+### todo
 1. need a responsive treatment

@@ -2,7 +2,6 @@
   "name": "bgg-home-redesign",
   "version": "1.0.0",
   "description": "redesign of board game geek",
-  "main": "index.js",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-connect": "^0.11.2",

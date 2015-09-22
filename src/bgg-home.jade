@@ -91,9 +91,9 @@ html(lang="en")
                             each game in featuredGames
                                 if game.active
                                     .active-game
-                                        .name= game.name
-                                        .description= game.description
-                                        .stats
+                                        .row.name= game.name
+                                        .row.description= game.description
+                                        .row.stats
                                             .stat
                                                 .value= game.geekRating
                                                 .label Geek Rating
@@ -103,3 +103,23 @@ html(lang="en")
                                             .stat
                                                 .value= game.voters
                                                 .label Voters
+            footer
+                .page-container
+                    .columns
+                        .column.about
+                            .title About Us
+                            .content= footer.about
+                        .column.nav
+                            .title Navigation
+                            ul.links
+                                each item in footer.nav
+                                    li: a(href=item.href)= item.label
+                        .column.contact
+                            .title Contact
+                            .number= footer.contact.number
+                            .email
+                                a(href=footer.contact.email.target)= footer.contact.email.label
+                .copyright
+                    .page-container
+                        p!= footer.copyright
+                        

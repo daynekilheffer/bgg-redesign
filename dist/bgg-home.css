@@ -29,6 +29,9 @@ input.form-control {
   .btn.btn-small {
     font-size: 12px; }
 
+body {
+  padding-bottom: 8px; }
+
 .root-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -170,6 +173,7 @@ header nav {
       width: 100%; }
 
 .list-container {
+  display: none;
   background: url(https://cf.geekdo-images.com/images/pic355125_lg.jpg) center 45%;
   background-size: cover;
   padding: 20px 0; }
@@ -275,17 +279,18 @@ header nav {
       text-align: center;
       max-width: 520px;
       margin: 0 auto; }
+      .hotness-container .game-carousel-row .active-game .row {
+        margin-top: 20px; }
       .hotness-container .game-carousel-row .active-game .name {
         font-size: 16px;
-        font-weight: bold;
-        margin-top: 20px; }
+        font-weight: bold; }
       .hotness-container .game-carousel-row .active-game .description {
         line-height: 1.5em;
-        margin-top: 20px;
         color: #666; }
       .hotness-container .game-carousel-row .active-game .stats {
         width: 80%;
-        margin: 20px auto 0; }
+        margin-left: auto;
+        margin-right: auto; }
       .hotness-container .game-carousel-row .active-game .stat {
         display: inline-block;
         width: 33%; }
@@ -296,5 +301,45 @@ header nav {
         .hotness-container .game-carousel-row .active-game .stat .label {
           color: #666;
           margin-top: 4px; }
+
+footer {
+  background-color: #CCC;
+  color: white; }
+  footer .column {
+    display: inline-block;
+    padding: 20px 2% 20px 0;
+    vertical-align: top; }
+  footer a, footer a:hover, footer a:visited, footer a:active {
+    color: white;
+    text-decoration: none; }
+  footer .about {
+    width: 36%; }
+    footer .about .content {
+      width: 70%;
+      font-size: 12px; }
+  footer .nav {
+    width: 38%; }
+    footer .nav ul {
+      -webkit-column-count: 2;
+      column-count: 2;
+      width: 70%;
+      margin-left: 0; }
+      footer .nav ul li {
+        margin-bottom: 6px; }
+  footer .contact {
+    width: 16%; }
+    footer .contact .number {
+      margin-bottom: 10px; }
+  footer .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 14px; }
+  footer .copyright {
+    background-color: #999;
+    color: #CCC;
+    padding: 6px;
+    font-size: 12px; }
+    footer .copyright p {
+      margin: 0; }
 
 /*# sourceMappingURL=bgg-home.css.map */

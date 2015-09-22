@@ -164,5 +164,74 @@
             "averageRating": 7.34,
             "voters": 53721
         }
-    ]
+    ],
+    "footer": {
+        "about": "BoardGameGeek is an online board gaming resource and community. The site is updated on a real-time basis by its large and still growing user base, making the 'Geek the largest and most up-to-date place to get gaming information! There is no charge to become a registered member of BGG, although you are certainly encouraged to help improve the site by adding your own reviews and thoughts on games to the existing database!",
+        "nav": [
+            {
+                "label": "Home",
+                "href": "#"
+            },
+            {
+                "label": "Welcome",
+                "href": "#"
+            },
+            {
+                "label": "Contact",
+                "href": "#"
+            },
+            {
+                "label": "Privacy Policy",
+                "href": "#"
+            },
+            {
+                "label": "Terms of Service",
+                "href": "#"
+            },
+            {
+                "label": "Advertise",
+                "href": "#"
+            },
+            {
+                "label": "Support BGG",
+                "href": "#"
+            },
+            {
+                "label": "Browse",
+                "href": "#"
+            },
+            {
+                "label": "Forums",
+                "href": "#"
+            },
+            {
+                "label": "GeekList",
+                "href": "#"
+            },
+            {
+                "label": "Bazzar",
+                "href": "#"
+            },
+            {
+                "label": "Misc",
+                "href": "#"
+            },
+            {
+                "label": "Help",
+                "href": "#"
+            },
+            {
+                "label": "Feeds",
+                "href": "#"
+            }
+        ],
+        "contact": {
+            "number": "1 800 555 1234",
+            "email": {
+                "label": "contact@bgg.com",
+                "target": "mailto:contact@bgg.com"
+            }
+        },
+        "copyright": "&copy This is my copyright - it is not real."
+    }
 }

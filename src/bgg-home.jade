@@ -65,7 +65,10 @@ html(lang="en")
                                             .content
                                                 .subtitle
                                                     each list in column.lists
-                                                        .subitem
+                                                        - var classes = ""
+                                                        if list.active
+                                                            - classes = "active"
+                                                        .subitem(class=classes)
                                                             a(href="#") !{list.name}
                                                 ul.list-content
                                                     each list in column.lists
@@ -73,3 +76,30 @@ html(lang="en")
                                                             each item in list.items
                                                                 li !{item}
                 section.hotness-container
+                    .page-container
+                        .button-row
+                            a.button(href="#")
+                                strong featured
+                                | games
+                        .game-carousel-row
+                            .border.top
+                            .game-carousel
+                                each game in featuredGames
+                                    .item
+                                        img.game-image(src=game.icon.large)
+                            .border.bottom
+                            each game in featuredGames
+                                if game.active
+                                    .active-game
+                                        .name= game.name
+                                        .description= game.description
+                                        .stats
+                                            .stat
+                                                .value= game.geekRating
+                                                .label Geek Rating
+                                            .stat
+                                                .value= game.averageRating
+                                                .label Average Rating
+                                            .stat
+                                                .value= game.voters
+                                                .label Voters

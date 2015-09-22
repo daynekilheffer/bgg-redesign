@@ -61,7 +61,7 @@
                 {
                     "href": "#",
                     "linkableTitle": "Contest! WINNERS!",
-                    "title": "Smirk & Dagger Games \"__Student Bodies__\" [Page 1,2]"
+                    "title": "Smirk & Dagger Games \"<strong>Student Bodies</strong>\" [Page 1,2]"
                 }
             ]
         },
@@ -105,6 +105,64 @@
                     "name": "COMPANY"
                 }
             ]
+        }
+    ],
+    "featuredGames": [
+        {
+            "icon": {
+                "large": "https://cf.geekdo-images.com/images/pic2273868_md.jpg",
+                "medium": "https://cf.geekdo-images.com/images/pic2273868_t.jpg"
+            },
+            "name": "Splendor",
+            "description": "Splendor is a game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops—all in order to acquire the most prestige points. If you're wealthy enough, you might even receive a visit from a noble at some point, which of course will further increase your prestige.",
+            "geekRating": 7.474,
+            "averageRating": 7.61,
+            "voters": 13383
+        },
+        {
+            "icon": {
+                "large": "https://cf.geekdo-images.com/images/pic1195149_md.jpg",
+                "medium": "https://cf.geekdo-images.com/images/pic1195149_t.jpg"
+            },
+            "name": "Dominion",
+            "description": "In Dominion, each player starts with an identical, very small deck of cards. In the center of the table is a selection of other cards the players can \"buy\" as they can afford them. Through their selection of cards to buy, and how they play their hands as they draw them, the players construct their deck on the fly, striving for the most efficient path to the precious victory points by game end.",
+            "geekRating": 7.689,
+            "averageRating": 7.77,
+            "voters": 44359
+        },
+        {
+            "active": true,
+            "icon": {
+                "large": "https://cf.geekdo-images.com/images/pic1116080_md.jpg",
+                "medium": "https://cf.geekdo-images.com/images/pic1116080_t.jpg"
+            },
+            "name": "Lords of Waterdeep",
+            "description": "In Lords of Waterdeep, a strategy board game with 2-5 players, you take on the role of one of the masked Lords of Waterdeep, secret rules of the city. Through your agents, you recruit adventurers to go on quests on your behalf, earning rewards and increasing your influence over the city.",
+            "geekRating": 7.7,
+            "averageRating": 7.8,
+            "voters": 16753
+        },
+        {
+            "icon": {
+                "large": "https://cf.geekdo-images.com/images/pic1269874_md.jpg",
+                "medium": "https://cf.geekdo-images.com/images/pic1269874_t.jpg"
+            },
+            "name": "Smash up",
+            "description": "The \"shufflebuilding\" game Smash Up starts with a simple premise: Take the twenty-card decks of two factions, shuffle them into a forty-card deck, then compete to smash more Bases than your opponents! Each faction brings a different game mechanism into play – pirates move cards, zombies bring cards back from the discard pile, dinosaurs have huge power – and every combination of factions brings a different play experience.",
+            "geekRating": 6.830,
+            "averageRating": 6.98,
+            "voters": 10096
+        },
+        {
+            "icon": {
+                "large": "https://cf.geekdo-images.com/images/pic2419375_md.jpg",
+                "medium": "https://cf.geekdo-images.com/images/pic2419375_t.jpg"
+            },
+            "name": "The Settlers of Catan",
+            "description": "In Catan (formerly The Settlers of Catan), players try to be the dominant force on the island of Catan by building settlements, cities, and roads. On each turn dice are rolled to determine what resources the island produces. Players collect these resources (cards)—wood, grain, brick, sheep, or stone—to build up their civilizations to get to 10 victory points and win the game.",
+            "geekRating": 7.211,
+            "averageRating": 7.34,
+            "voters": 53721
         }
     ]
 }

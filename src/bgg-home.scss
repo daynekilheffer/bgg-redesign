@@ -25,6 +25,7 @@ $pageWidth: 980px;
 
 .page-container {
     max-width: $pageWidth;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -112,6 +113,8 @@ header {
 }
 
 .hero-container {
+    // testing the bottom component
+    display: none;
     
     margin-bottom: 30px;
     
@@ -192,7 +195,7 @@ header {
 }
 
 .list-container {
-    background: url(https://cf.geekdo-images.com/images/pic355125_lg.jpg) fixed;
+    background: url(https://cf.geekdo-images.com/images/pic355125_lg.jpg) center 45%;
     background-size: cover;
     padding: 20px 0;
     
@@ -272,6 +275,112 @@ header {
                 list-style: disc;
                 list-style-position: inside;
                 font-size: 12px;
+            }
+        }
+    }
+}
+.hotness-container {
+    margin: 30px 0;
+    
+    .button-row {
+        text-align: center;
+        
+        a.button {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: $geek-primary;
+            text-transform: uppercase;
+            &, &:active, &:hover, &:visited {
+                color: white;
+                text-decoration: none;
+                
+            }
+        }
+    }
+    .game-carousel-row {
+        padding: 30px 0;
+        .border {
+            margin: 0 auto;
+            height: 35px;
+            width: 59%;
+            
+            @mixin border-gradient($x, $y) {
+                background: radial-gradient(59% 40px ellipse at $x $y, #bbb, white);
+            }
+            
+            &.top {
+                @include border-gradient(center, top);
+            }
+            &.bottom {
+                @include border-gradient(center, bottom);
+            }
+        }
+        
+        .game-carousel {
+            padding: 60px 0;
+            .item {
+                display: inline-block;
+                
+                opacity: 0.6;
+                
+                width: 18%;
+                text-align: center;
+                vertical-align: middle;
+                
+                .game-image {
+                    width: 60%;
+                    cursor: pointer;
+                }
+                
+                &:nth-child(odd) {
+                    opacity: 0.4;
+                    margin-top: -7%;
+                }
+                
+                &:nth-child(3) {
+                    opacity: 1;
+                    margin-top: 0;
+                    width: 28%;
+                    .game-image {
+                        width: 65%;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+        .active-game {
+            text-align: center;
+            max-width: 520px;
+            margin: 0 auto;
+            
+            .name {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            .description {
+                line-height: 1.5em;
+                margin-top: 20px;
+                color: #666;
+            }
+            
+            .stats {
+                width: 80%;
+                margin: 20px auto 0;
+            }
+            
+            .stat {
+                display: inline-block;
+                width: 33%;
+                .value {
+                    font-size: 16px;
+                    color: $geek-primary;
+                    font-weight: bold;
+                }
+                .label {
+                    color: #666;
+                    margin-top: 4px;
+                }
             }
         }
     }

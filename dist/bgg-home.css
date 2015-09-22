@@ -47,6 +47,7 @@ input.form-control {
 
 .page-container {
   max-width: 980px;
+  padding: 0 20px;
   margin: 0 auto; }
 
 header .top-nav {
@@ -114,6 +115,7 @@ header nav {
       background-color: #FD8925; }
 
 .hero-container {
+  display: none;
   margin-bottom: 30px; }
   .hero-container .carousel {
     background: radial-gradient(farthest-corner at 20% 40%, #feb271, #fd7907);
@@ -168,7 +170,7 @@ header nav {
       width: 100%; }
 
 .list-container {
-  background: url(https://cf.geekdo-images.com/images/pic355125_lg.jpg) fixed;
+  background: url(https://cf.geekdo-images.com/images/pic355125_lg.jpg) center 45%;
   background-size: cover;
   padding: 20px 0; }
   .list-container a, .list-container a:visited, .list-container a:active {
@@ -225,5 +227,74 @@ header nav {
       list-style: disc;
       list-style-position: inside;
       font-size: 12px; }
+
+.hotness-container {
+  margin: 30px 0; }
+  .hotness-container .button-row {
+    text-align: center; }
+    .hotness-container .button-row a.button {
+      display: inline-block;
+      padding: 6px 12px;
+      background-color: #FD8925;
+      text-transform: uppercase; }
+      .hotness-container .button-row a.button, .hotness-container .button-row a.button:active, .hotness-container .button-row a.button:hover, .hotness-container .button-row a.button:visited {
+        color: white;
+        text-decoration: none; }
+  .hotness-container .game-carousel-row {
+    padding: 30px 0; }
+    .hotness-container .game-carousel-row .border {
+      margin: 0 auto;
+      height: 35px;
+      width: 59%; }
+      .hotness-container .game-carousel-row .border.top {
+        background: radial-gradient(59% 40px ellipse at center top, #bbb, white); }
+      .hotness-container .game-carousel-row .border.bottom {
+        background: radial-gradient(59% 40px ellipse at center bottom, #bbb, white); }
+    .hotness-container .game-carousel-row .game-carousel {
+      padding: 60px 0; }
+      .hotness-container .game-carousel-row .game-carousel .item {
+        display: inline-block;
+        opacity: 0.6;
+        width: 18%;
+        text-align: center;
+        vertical-align: middle; }
+        .hotness-container .game-carousel-row .game-carousel .item .game-image {
+          width: 60%;
+          cursor: pointer; }
+        .hotness-container .game-carousel-row .game-carousel .item:nth-child(odd) {
+          opacity: 0.4;
+          margin-top: -7%; }
+        .hotness-container .game-carousel-row .game-carousel .item:nth-child(3) {
+          opacity: 1;
+          margin-top: 0;
+          width: 28%; }
+          .hotness-container .game-carousel-row .game-carousel .item:nth-child(3) .game-image {
+            width: 65%;
+            cursor: default; }
+    .hotness-container .game-carousel-row .active-game {
+      text-align: center;
+      max-width: 520px;
+      margin: 0 auto; }
+      .hotness-container .game-carousel-row .active-game .name {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 20px; }
+      .hotness-container .game-carousel-row .active-game .description {
+        line-height: 1.5em;
+        margin-top: 20px;
+        color: #666; }
+      .hotness-container .game-carousel-row .active-game .stats {
+        width: 80%;
+        margin: 20px auto 0; }
+      .hotness-container .game-carousel-row .active-game .stat {
+        display: inline-block;
+        width: 33%; }
+        .hotness-container .game-carousel-row .active-game .stat .value {
+          font-size: 16px;
+          color: #FD8925;
+          font-weight: bold; }
+        .hotness-container .game-carousel-row .active-game .stat .label {
+          color: #666;
+          margin-top: 4px; }
 
 /*# sourceMappingURL=bgg-home.css.map */

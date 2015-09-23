@@ -241,8 +241,10 @@ input.form-control {
           width: 60%;
           cursor: pointer; }
         .hotness-container .game-carousel-row .game-carousel .item:nth-child(odd) {
-          opacity: 0.4;
+          opacity: 0.35;
           margin-top: -7%; }
+          .hotness-container .game-carousel-row .game-carousel .item:nth-child(odd) .game-image {
+            width: 50%; }
         .hotness-container .game-carousel-row .game-carousel .item:nth-child(3) {
           opacity: 1;
           margin-top: 0;
@@ -257,7 +259,7 @@ input.form-control {
       .hotness-container .game-carousel-row .active-game .row {
         margin-top: 20px; }
       .hotness-container .game-carousel-row .active-game .name {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold; }
       .hotness-container .game-carousel-row .active-game .description {
         line-height: 1.5em;

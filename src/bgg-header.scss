@@ -1,11 +1,12 @@
 @import 'bgg-properties';
+@import 'bgg-common';
 
 header {
     $header-color: #CCC;
     .top-nav {
         background-color: $header-color;
         .clear-login {
-            @extend .clearfix;
+            @extend %clearfix;
             width: 100%;
         }
     }

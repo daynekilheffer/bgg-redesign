@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    head
+        title BGG - Home
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
+        link(rel="stylesheet", href="layout.css")
+        block styles
+    body
+        .root-container
+            header
+                .top-nav
+                    .page-container
+                        .clear-login
+                            .brand
+                                span Board
+                                span Game
+                                span.geek Geek
+                            .search-form
+                                input.form-control(placeholder="search")
+                                button.btn.btn-primary.btn-small go
+                            .login-form
+                                .top-anchor
+                                    .row
+                                        input.form-control.username(placeholder="username")
+                                        button.btn.btn-primary.btn-small sign in
+                                    .row
+                                        input.form-control.password(type="password", placeholder="password")
+                                        button.btn.btn-default.btn-small register
+                nav
+                    .page-container
+                        ul
+                            each label in navigation.items
+                                li
+                                    a(href='#')
+                                        span.highlight &nbsp;
+                                        span.label= label
+            main
+                block content
+            footer
+                .page-container
+                    .columns
+                        .column.about
+                            .title About Us
+                            .content= footer.about
+                        .column.nav
+                            .title Navigation
+                            ul.links
+                                each item in footer.nav
+                                    li: a(href=item.href)= item.label
+                        .column.contact
+                            .title Contact
+                            .number= footer.contact.number
+                            .email
+                                a(href=footer.contact.email.target)= footer.contact.email.label
+                .copyright
+                    .page-container
+                        p!= footer.copyright
+                        

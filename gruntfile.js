@@ -7,7 +7,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/bgg-home.css': 'src/bgg-home.scss'
+                    'dist/bgg-home.css': 'src/home.scss',
+                    'dist/layout.css': 'src/layout.scss'
                 }
             }
         },
@@ -17,7 +18,8 @@ module.exports = function(grunt) {
                     data: require('./input-data.json')
                 },
                 files: {
-                    'dist/bgg-home.html': ['src/bgg-home.jade']
+                    'dist/bgg-home.html': ['src/bgg-home.jade'],
+                    'dist/layout-example.html': ['src/layout-example.jade']
                 }
             }
         },

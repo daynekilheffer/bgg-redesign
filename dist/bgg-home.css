@@ -24,16 +24,6 @@ input.form-control {
   .btn.btn-small {
     font-size: 12px; }
 
-.clearfix {
-  display: inline-block; }
-  .clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
-
 .hero-container {
   margin-bottom: 30px; }
   .hero-container .carousel {

@@ -7,7 +7,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/bgg-home.css': 'src/home.scss',
+                    'dist/bgg-home.css': 'src/bgg-home.scss',
                     'dist/layout.css': 'src/layout.scss'
                 }
             }

@@ -1,0 +1,134 @@
+ul, ol {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none; }
+
+body {
+  padding-bottom: 8px; }
+
+.root-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.7);
+  font-size: 14px; }
+
+.page-container {
+  max-width: 980px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+header .top-nav .clear-login {
+  display: inline-block; }
+  header .top-nav .clear-login:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+
+header .top-nav {
+  background-color: #CCC; }
+  header .top-nav .clear-login {
+    width: 100%; }
+
+header .brand {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 40px 0;
+  margin-right: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  header .brand .geek {
+    color: white;
+    padding: 3px;
+    background-color: #FD8925; }
+
+header .search-form {
+  display: inline-block;
+  margin-left: 15%; }
+
+header .login-form {
+  display: inline-block;
+  float: right; }
+  header .login-form input {
+    font-size: 12px; }
+  header .login-form button {
+    min-width: 60px; }
+  header .login-form .top-anchor {
+    background-color: #6E6E70;
+    padding: 16px 10px 12px;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.6); }
+
+header nav {
+  background-color: white;
+  padding-bottom: 20px; }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto; }
+  header nav li {
+    display: inline-block;
+    width: 14.2857142857%; }
+  header nav .highlight {
+    display: block;
+    height: 8px;
+    margin-top: -8px;
+    background-color: #CCC; }
+  header nav .label {
+    display: block;
+    padding: 8px;
+    text-align: center; }
+  header nav a, header nav a:visited, header nav a:link, header nav a:hover {
+    text-decoration: none;
+    color: black; }
+  header nav a:hover {
+    color: #FD8925; }
+    header nav a:hover .highlight {
+      background-color: #FD8925; }
+
+footer {
+  background-color: #CCC;
+  color: white; }
+  footer .column {
+    display: inline-block;
+    padding: 20px 2% 20px 0;
+    vertical-align: top; }
+  footer a, footer a:hover, footer a:visited, footer a:active {
+    color: white;
+    text-decoration: none; }
+  footer .about {
+    width: 36%; }
+    footer .about .content {
+      width: 70%;
+      font-size: 12px; }
+  footer .nav {
+    width: 38%; }
+    footer .nav ul {
+      -webkit-column-count: 2;
+      column-count: 2;
+      width: 70%;
+      margin-left: 0; }
+      footer .nav ul li {
+        margin-bottom: 6px; }
+  footer .contact {
+    width: 16%; }
+    footer .contact .number {
+      margin-bottom: 10px; }
+  footer .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 14px; }
+  footer .copyright {
+    background-color: #999;
+    color: #CCC;
+    padding: 6px;
+    font-size: 12px; }
+    footer .copyright p {
+      margin: 0; }
+
+/*# sourceMappingURL=layout.css.map */

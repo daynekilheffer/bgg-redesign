@@ -13,9 +13,7 @@
 
 1. giving focus to inputs causes the outline to appear which doesn't conform to the border-radius.  Bootstrap handles this by removing the outline and putting a box-shadow around the input field
 2. gradients on buttons don't match spec
-3. "featured games" carousel top/bottom gradients look a bit dark
-4. opacity in featured games doesn't match spec
-5. "contests" don't have the correct color for the [Page ...] elements
+3. "contests" don't have the correct color for the [Page ...] elements
 
 ### todo
 1. "featured games" carousel is missing arrow controls

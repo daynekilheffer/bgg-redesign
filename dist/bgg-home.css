@@ -120,9 +120,10 @@ header nav {
 .hero-container {
   margin-bottom: 30px; }
   .hero-container .carousel {
-    background: radial-gradient(farthest-corner at 20% 40%, #feb271, #fd7907);
+    background: radial-gradient(farthest-corner at 20% 40%, #F89E2E, #E2600F);
     height: 400px;
-    position: relative; }
+    position: relative;
+    box-shadow: 1px 0px 18px 1px rgba(0, 0, 0, 0.6); }
     .hero-container .carousel .controls {
       position: absolute;
       width: 50%;
@@ -169,7 +170,79 @@ header nav {
         .hero-container .carousel .arrow.right:before {
           content: '\203a'; }
     .hero-container .carousel .content {
-      width: 100%; }
+      padding: 40px;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box; }
+  .hero-container .geek-award {
+    color: white;
+    padding: 30px; }
+    .hero-container .geek-award .details {
+      display: inline-block;
+      width: 55%;
+      margin-top: 12px; }
+      .hero-container .geek-award .details .header {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 36px; }
+        .hero-container .geek-award .details .header .pre {
+          font-size: 18px;
+          line-height: 28px; }
+        .hero-container .geek-award .details .header .main {
+          font-size: 34px;
+          font-weight: bold;
+          line-height: 42px; }
+        .hero-container .geek-award .details .header .post {
+          font-size: 30px;
+          letter-spacing: 6px;
+          line-height: 36px; }
+      .hero-container .geek-award .details .context {
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        width: 75%;
+        margin-bottom: 24px; }
+      .hero-container .geek-award .details .call-to-action {
+        width: 85%;
+        text-align: right; }
+        .hero-container .geek-award .details .call-to-action a span {
+          font-size: 12px;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 4px 10px 4px 20px;
+          background-color: #F7BC7A; }
+          .hero-container .geek-award .details .call-to-action a span, .hero-container .geek-award .details .call-to-action a span:hover, .hero-container .geek-award .details .call-to-action a span:active, .hero-container .geek-award .details .call-to-action a span:visited {
+            color: white;
+            text-decoration: none; }
+        .hero-container .geek-award .details .call-to-action a:after {
+          display: inline-block;
+          content: " ";
+          border-top: 11px solid transparent;
+          border-bottom: 11px solid transparent;
+          border-left: 18px solid #F7BC7A;
+          width: 0;
+          height: 0;
+          vertical-align: bottom; }
+    .hero-container .geek-award .icon {
+      display: inline-block;
+      vertical-align: top;
+      width: 45%;
+      text-align: center; }
+      .hero-container .geek-award .icon .text {
+        text-transform: uppercase;
+        margin-top: 60px; }
+        .hero-container .geek-award .icon .text .pre, .hero-container .geek-award .icon .text .post {
+          font-size: 28px;
+          letter-spacing: 3px; }
+        .hero-container .geek-award .icon .text .main {
+          font-size: 68px;
+          font-weight: bold;
+          line-height: 1em; }
+        .hero-container .geek-award .icon .text .post {
+          line-height: 1.4em; }
+        .hero-container .geek-award .icon .text .subtext {
+          line-height: 1.4em;
+          font-size: 13px; }
 
 .list-container {
   background: url(https://cf.geekdo-images.com/images/pic355125_lg.jpg) center 45%;

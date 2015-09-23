@@ -44,6 +44,23 @@ html(lang="en")
                             .arrow.left
                             .arrow.right
                             .content
+                                .geek-award
+                                    .details
+                                        .header
+                                            .pre= carousel.geekAward.header.pre
+                                            .main= carousel.geekAward.header.main
+                                            .post= carousel.geekAward.header.post
+                                        .context
+                                            p!= carousel.geekAward.context
+                                        .call-to-action
+                                            a(href=carousel.geekAward.cta.href)
+                                                span= carousel.geekAward.cta.label
+                                    .icon
+                                        .text
+                                            .pre= carousel.geekAward.icon.pre
+                                            .main= carousel.geekAward.icon.main
+                                            .post= carousel.geekAward.icon.post
+                                            .subtext= carousel.geekAward.icon.subtext
                 section.list-container
                     .page-container
                         .columns

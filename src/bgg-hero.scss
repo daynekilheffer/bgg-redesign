@@ -4,9 +4,12 @@
     margin-bottom: 30px;
     
     .carousel {
-        background: radial-gradient(farthest-corner at 20% 40%, lighten($geek-primary, 15%), $geek-dark-primary);
+        $hero-light: #F89E2E;
+        $hero-dark: #E2600F;
+        background: radial-gradient(farthest-corner at 20% 40%, $hero-light, $hero-dark);
         height: 400px;
         position: relative;
+        box-shadow: 1px 0px 18px 1px rgba(0,0,0,0.6);
         
         .controls {
             $controls-width: 50%;
@@ -73,8 +76,102 @@
             }
         }
         .content {
-            
+            padding: 40px;
             width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+    }
+    
+    .geek-award {
+        color: white;
+        padding: 30px;
+        .details {
+            display: inline-block;
+            width: 55%;
+            margin-top: 12px;
+            .header {
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-bottom: 36px;
+                .pre {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                .main {
+                    font-size: 34px;
+                    font-weight: bold;
+                    line-height: 42px;
+                }
+                .post {
+                    font-size: 30px;
+                    letter-spacing: 6px;
+                    line-height: 36px;
+                }
+            }
+            .context {
+                font-size: 13px;
+                letter-spacing: 1px;
+                line-height: 18px;
+                width: 75%;
+                margin-bottom: 24px;
+            }
+            .call-to-action {
+                width: 85%;
+                text-align: right;
+                
+                $cta-color: #F7BC7A;
+                
+                a {
+                    span {
+                        font-size: 12px;
+                        display: inline-block;
+                        text-transform: uppercase;
+                        padding: 4px 10px 4px 20px;
+                        background-color: $cta-color;
+                        &, &:hover, &:active, &:visited {
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                    &:after {
+                        display: inline-block;
+                        content: " ";
+                        border-top: 11px solid transparent;
+                        border-bottom: 11px solid transparent;
+                        border-left: 18px solid $cta-color;
+                        width: 0;
+                        height: 0;
+                        vertical-align: bottom;
+                    }
+                }
+            }
+        }
+        .icon {
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+            text-align: center;
+            .text {
+                text-transform: uppercase;
+                margin-top: 60px;
+                .pre, .post {
+                    font-size: 28px;
+                    letter-spacing: 3px;
+                }
+                .main {
+                    font-size: 68px;
+                    font-weight: bold;
+                    line-height: 1em;
+                }
+                .post {
+                    line-height: 1.4em;
+                }
+                .subtext {
+                    line-height: 1.4em;
+                    font-size: 13px;
+                }
+            }
         }
     }
 }

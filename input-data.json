@@ -3,7 +3,25 @@
         "items": ["Home", "Browse", "Forums", "GeekList", "Bazaar", "Misc", "Help"]
     },
     "carousel": {
-        "controls": [null, null, null, null]
+        "controls": [null, null, null, null],
+        "geekAward": {
+            "header": {
+                "pre": "only a few days left for",
+                "main": "golden geek award",
+                "post": "nominations"
+            },
+            "context": "If you haven't yet made your nominations for the 2014 Golden Geek Awards &mdash; please do it soon! The nominations will close at midnight CST on February 8th, 2015",
+            "cta": {
+                "href": "#",
+                "label": "find out more here"
+            },
+            "icon": {
+                "pre": "golden",
+                "main": "geek",
+                "post": "award",
+                "subtext": "2014"
+            }
+        }
     },
     "columns": [
         {

@@ -17,29 +17,23 @@ body {
   padding: 0 20px;
   margin: 0 auto; }
 
-header .top-nav .clear-login {
-  display: inline-block; }
-  header .top-nav .clear-login:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
-
 header .top-nav {
-  background-color: #CCC; }
-  header .top-nav .clear-login {
-    width: 100%; }
+  background-color: #CCC;
+  min-height: 105px; }
+  header .top-nav .columns-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 16px; }
 
 header .brand {
   display: inline-block;
   font-family: sans-serif;
-  padding: 40px 0;
-  margin-right: 30px;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: bold;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  margin-top: 18px; }
   header .brand .geek {
     color: white;
     padding: 3px;
@@ -47,11 +41,11 @@ header .brand {
 
 header .search-form {
   display: inline-block;
-  margin-left: 15%; }
+  margin-top: 18px; }
 
 header .login-form {
   display: inline-block;
-  float: right; }
+  align-self: flex-start; }
   header .login-form input {
     font-size: 12px; }
   header .login-form button {
@@ -59,8 +53,8 @@ header .login-form {
   header .login-form .top-anchor {
     background-color: #6E6E70;
     padding: 16px 10px 12px;
-    border-bottom-right-radius: 18px;
-    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
     box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.6); }
 
 header nav {
@@ -81,6 +75,7 @@ header nav {
     background-color: #CCC; }
   header nav .label {
     display: block;
+    font-size: 16px;
     padding: 8px;
     text-align: center; }
   header nav a, header nav a:visited, header nav a:link, header nav a:hover {

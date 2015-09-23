@@ -1,23 +1,25 @@
 @import 'properties';
-@import 'common';
 
 header {
     $header-color: #CCC;
     .top-nav {
         background-color: $header-color;
-        .clear-login {
-            @extend %clearfix;
-            width: 100%;
+        min-height: 105px;
+        .columns-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 40px;
+            padding-left: 16px;
         }
     }
     .brand {
         display: inline-block;
         font-family: sans-serif;
-        padding: 40px 0;
-        margin-right: 30px;
-        font-size: 22px;
+        font-size: 28px;
         font-weight: bold;
         letter-spacing: 1px;
+        margin-top: 18px;
         
         .geek {
             color: white;
@@ -27,11 +29,11 @@ header {
     }
     .search-form {
         display: inline-block;
-        margin-left: 15%;
+        margin-top: 18px;
     }
     .login-form {
         display: inline-block;
-        float: right;
+        align-self: flex-start;
         input {
             font-size: 12px;
         }
@@ -41,8 +43,8 @@ header {
         .top-anchor {
             background-color: #6E6E70;
             padding: 16px 10px 12px;
-            border-bottom-right-radius: 18px;
-            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
             box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.6);
         }
     }
@@ -68,6 +70,7 @@ header {
         }
         .label {
             display: block;
+            font-size: 16px;
             padding: 8px;
             text-align: center;
         }

@@ -27,7 +27,7 @@
 
 
 #### nice to have
-1. I mixed ${variable} and tag= variable syntax in jade - refactor as needed
+1. I mixed `${variable}` and `tag= variable` syntax in jade - refactor as needed
 2. enable simple dynamic behavior
   * hero carousel buttons
   * featured game carousel images

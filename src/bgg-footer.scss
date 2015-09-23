@@ -1,0 +1,66 @@
+@import 'bgg-properties';
+
+footer {
+    background-color: #CCC;
+    color: white;
+    
+    .column {
+        display: inline-block;
+        padding: 20px 2% 20px 0;
+        vertical-align: top;
+    }
+    
+    a, a:hover, a:visited, a:active {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .about {
+        width: 36%;
+        
+        .content {
+            width: 70%;
+            font-size: 12px;
+        }
+    }
+    
+    .nav {
+        width: 38%;
+        
+        ul {
+            -webkit-column-count: 2;
+            column-count: 2;
+            width: 70%;
+            margin-left: 0;
+            
+            li {
+                margin-bottom: 6px;
+            }
+        }
+    }
+    
+    .contact {
+        width: 16%;
+        
+        .number {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 14px;
+    }
+    
+    .copyright {
+        background-color: #999;
+        color: #CCC;
+        padding: 6px;
+        font-size: 12px;
+        
+        p {
+            margin: 0;
+        }
+    }
+}

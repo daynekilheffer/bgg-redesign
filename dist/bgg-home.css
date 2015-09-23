@@ -29,15 +29,6 @@ input.form-control {
   .btn.btn-small {
     font-size: 12px; }
 
-body {
-  padding-bottom: 8px; }
-
-.root-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.7);
-  font-size: 14px; }
-
 .clearfix, header .top-nav .clear-login {
   display: inline-block; }
   .clearfix:after, header .top-nav .clear-login:after {
@@ -47,6 +38,15 @@ body {
     content: " ";
     clear: both;
     height: 0; }
+
+body {
+  padding-bottom: 8px; }
+
+.root-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.7);
+  font-size: 14px; }
 
 .page-container {
   max-width: 980px;

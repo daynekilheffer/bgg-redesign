@@ -2,6 +2,7 @@
 ### target
 
 - https://caitlinpannellevans.files.wordpress.com/2015/02/bgg-website-home.jpg
+  - [local version](bgg-website-home.jpg)
 
 ### support
 

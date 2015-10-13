@@ -65,20 +65,31 @@ header {
         padding-bottom: 20px;
         
         ul {
-            margin: 0;
+            display: flex;
+            justify-content: space-between;
             padding: 0;
-            width: 80%;
             margin: 0 auto;
+            // got some magic numbers I need to deal with
+            @media (min-width: 0px) and (max-width: 599px) {
+                width: 95%;
+            }
+            @media (min-width: 600px) and (max-width: 799px) {
+                width: 90%;
+            }
+            @media (min-width: 800px) {
+                width: 80%;
+            }
         }
         li {
             display: inline-block;
             width: percentage(1/7);
         }
         .highlight {
+            $height: 8px;
             display: block;
-            height: 8px;
-            margin-top: -8px;
-            background-color:#CCC;
+            height: $height;
+            margin-top: -$height;
+            background-color: #CCC;
         }
         .label {
             display: block;

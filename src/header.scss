@@ -2,15 +2,20 @@
 
 header {
     $header-color: #CCC;
+    $media-medium: 800px;
+    
     .top-nav {
         background-color: $header-color;
-        min-height: 105px;
+        min-height: 75px;
+        @media (min-width: $media-medium) {
+            min-height: 105px;
+        }
         .columns-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-right: 40px;
-            padding-left: 16px;
+            padding-right: 4%;
+            padding-left: 2%;
         }
     }
     .brand {
@@ -30,22 +35,29 @@ header {
     .search-form {
         display: inline-block;
         margin-top: 18px;
+        white-space: nowrap;
     }
     .login-form {
-        display: inline-block;
-        align-self: flex-start;
-        input {
-            font-size: 12px;
-        }
-        button {
-            min-width: 60px;
-        }
-        .top-anchor {
-            background-color: #6E6E70;
-            padding: 16px 10px 12px;
-            border-bottom-right-radius: 8px;
-            border-bottom-left-radius: 8px;
-            box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.6);
+        display: none;
+        @media (min-width: $media-medium) {
+            display: inline-block;
+            align-self: flex-start;
+            input {
+                font-size: 12px;
+            }
+            button {
+                min-width: 60px;
+            }
+            .top-anchor {
+                background-color: #6E6E70;
+                padding: 16px 10px 12px;
+                border-bottom-right-radius: 8px;
+                border-bottom-left-radius: 8px;
+                box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.6);
+            }
+            .row {
+                white-space: nowrap;
+            }
         }
     }
     nav {

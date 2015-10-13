@@ -14,18 +14,24 @@ body {
 
 .page-container {
   max-width: 980px;
-  padding: 0 20px;
+  padding: 0 1%;
   margin: 0 auto; }
+  @media (min-width: 800px) {
+    .page-container {
+      padding: 0 20px; } }
 
 header .top-nav {
   background-color: #CCC;
-  min-height: 105px; }
+  min-height: 75px; }
+  @media (min-width: 800px) {
+    header .top-nav {
+      min-height: 105px; } }
   header .top-nav .columns-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 40px;
-    padding-left: 16px; }
+    padding-right: 4%;
+    padding-left: 2%; }
 
 header .brand {
   display: inline-block;
@@ -41,21 +47,27 @@ header .brand {
 
 header .search-form {
   display: inline-block;
-  margin-top: 18px; }
+  margin-top: 18px;
+  white-space: nowrap; }
 
 header .login-form {
-  display: inline-block;
-  align-self: flex-start; }
-  header .login-form input {
-    font-size: 12px; }
-  header .login-form button {
-    min-width: 60px; }
-  header .login-form .top-anchor {
-    background-color: #6E6E70;
-    padding: 16px 10px 12px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.6); }
+  display: none; }
+  @media (min-width: 800px) {
+    header .login-form {
+      display: inline-block;
+      align-self: flex-start; }
+      header .login-form input {
+        font-size: 12px; }
+      header .login-form button {
+        min-width: 60px; }
+      header .login-form .top-anchor {
+        background-color: #6E6E70;
+        padding: 16px 10px 12px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.6); }
+      header .login-form .row {
+        white-space: nowrap; } }
 
 header nav {
   background-color: white;

@@ -173,11 +173,27 @@ input.form-control {
     color: #fd7907; }
   .list-container .columns {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-flow: column; }
+    @media (max-width: 800px) {
+      .list-container .columns {
+        margin: 0 auto;
+        width: 80%; } }
+  @media (max-width: 800px) and (max-width: 400px) {
+    .list-container .columns {
+      width: 95%; } }
+    @media (min-width: 800px) {
+      .list-container .columns {
+        flex-flow: row; } }
   .list-container .column-container {
     display: inline-block;
-    vertical-align: top;
-    width: 31%; }
+    vertical-align: top; }
+    @media (max-width: 800px) {
+      .list-container .column-container {
+        margin-bottom: 20px; } }
+    @media (min-width: 800px) {
+      .list-container .column-container {
+        width: 31%; } }
   .list-container .column > .title {
     display: inline-block;
     background-color: black;

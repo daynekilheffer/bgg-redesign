@@ -83,11 +83,17 @@ input.form-control {
       box-sizing: border-box; }
   .hero-container .geek-award {
     color: white;
-    padding: 30px; }
+    padding: 2%; }
+    @media (min-width: 850px) {
+      .hero-container .geek-award {
+        padding: 30px; } }
     .hero-container .geek-award .details {
       display: inline-block;
-      width: 55%;
+      position: relative;
       margin-top: 12px; }
+      @media (min-width: 850px) {
+        .hero-container .geek-award .details {
+          width: 55%; } }
       .hero-container .geek-award .details .header {
         text-transform: uppercase;
         letter-spacing: 4px;
@@ -111,7 +117,9 @@ input.form-control {
         margin-bottom: 24px; }
       .hero-container .geek-award .details .call-to-action {
         width: 85%;
-        text-align: right; }
+        text-align: right;
+        position: relative;
+        bottom: 10px; }
         .hero-container .geek-award .details .call-to-action a span {
           font-size: 12px;
           display: inline-block;
@@ -131,25 +139,28 @@ input.form-control {
           height: 0;
           vertical-align: bottom; }
     .hero-container .geek-award .icon {
-      display: inline-block;
-      vertical-align: top;
-      width: 45%;
-      text-align: center; }
-      .hero-container .geek-award .icon .text {
-        text-transform: uppercase;
-        margin-top: 60px; }
-        .hero-container .geek-award .icon .text .pre, .hero-container .geek-award .icon .text .post {
-          font-size: 28px;
-          letter-spacing: 3px; }
-        .hero-container .geek-award .icon .text .main {
-          font-size: 68px;
-          font-weight: bold;
-          line-height: 1em; }
-        .hero-container .geek-award .icon .text .post {
-          line-height: 1.4em; }
-        .hero-container .geek-award .icon .text .subtext {
-          line-height: 1.4em;
-          font-size: 13px; }
+      display: none; }
+      @media (min-width: 850px) {
+        .hero-container .geek-award .icon {
+          display: inline-block;
+          vertical-align: top;
+          width: 45%;
+          text-align: center; }
+          .hero-container .geek-award .icon .text {
+            text-transform: uppercase;
+            margin-top: 60px; }
+            .hero-container .geek-award .icon .text .pre, .hero-container .geek-award .icon .text .post {
+              font-size: 28px;
+              letter-spacing: 3px; }
+            .hero-container .geek-award .icon .text .main {
+              font-size: 68px;
+              font-weight: bold;
+              line-height: 1em; }
+            .hero-container .geek-award .icon .text .post {
+              line-height: 1.4em; }
+            .hero-container .geek-award .icon .text .subtext {
+              line-height: 1.4em;
+              font-size: 13px; } }
 
 .list-container {
   background: url(https://cf.geekdo-images.com/images/pic355125_lg.jpg) center 45%;

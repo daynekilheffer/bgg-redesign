@@ -84,11 +84,18 @@
     }
     
     .geek-award {
+        $media-medium: 850px;
         color: white;
-        padding: 30px;
+        padding: 2%;
+        @media (min-width: $media-medium) {
+            padding: 30px;
+        }
         .details {
             display: inline-block;
-            width: 55%;
+            position: relative;
+            @media (min-width: $media-medium) {
+                width: 55%;
+            }
             margin-top: 12px;
             .header {
                 text-transform: uppercase;
@@ -119,6 +126,8 @@
             .call-to-action {
                 width: 85%;
                 text-align: right;
+                position: relative;
+                bottom: 10px;
                 
                 $cta-color: #F7BC7A;
                 
@@ -148,28 +157,31 @@
             }
         }
         .icon {
-            display: inline-block;
-            vertical-align: top;
-            width: 45%;
-            text-align: center;
-            .text {
-                text-transform: uppercase;
-                margin-top: 60px;
-                .pre, .post {
-                    font-size: 28px;
-                    letter-spacing: 3px;
-                }
-                .main {
-                    font-size: 68px;
-                    font-weight: bold;
-                    line-height: 1em;
-                }
-                .post {
-                    line-height: 1.4em;
-                }
-                .subtext {
-                    line-height: 1.4em;
-                    font-size: 13px;
+            display: none;
+            @media (min-width: $media-medium) {
+                display: inline-block;
+                vertical-align: top;
+                width: 45%;
+                text-align: center;
+                .text {
+                    text-transform: uppercase;
+                    margin-top: 60px;
+                    .pre, .post {
+                        font-size: 28px;
+                        letter-spacing: 3px;
+                    }
+                    .main {
+                        font-size: 68px;
+                        font-weight: bold;
+                        line-height: 1em;
+                    }
+                    .post {
+                        line-height: 1.4em;
+                    }
+                    .subtext {
+                        line-height: 1.4em;
+                        font-size: 13px;
+                    }
                 }
             }
         }

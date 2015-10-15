@@ -23,15 +23,18 @@ body {
 header .top-nav {
   background-color: #CCC;
   min-height: 75px; }
-  @media (min-width: 800px) {
+  @media (min-width: 850px) {
     header .top-nav {
       min-height: 105px; } }
-  header .top-nav .columns-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 4%;
-    padding-left: 2%; }
+
+header .columns-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 4%;
+  padding-left: 2%;
+  padding-top: 18px; }
 
 header .brand {
   display: inline-block;
@@ -39,7 +42,8 @@ header .brand {
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-top: 18px; }
+  margin-bottom: 12px;
+  margin-right: 18px; }
   header .brand .geek {
     color: white;
     padding: 3px;
@@ -47,15 +51,18 @@ header .brand {
 
 header .search-form {
   display: inline-block;
-  margin-top: 18px;
-  white-space: nowrap; }
+  margin-bottom: 12px;
+  white-space: nowrap;
+  margin-right: 18px; }
 
 header .login-form {
   display: none; }
-  @media (min-width: 800px) {
+  @media (min-width: 850px) {
     header .login-form {
       display: inline-block;
-      align-self: flex-start; }
+      align-self: flex-start;
+      margin-top: -18px;
+      margin-right: 2%; }
       header .login-form input {
         font-size: 12px; }
       header .login-form button {

@@ -4,10 +4,13 @@ footer {
     background-color: #CCC;
     color: white;
     
+    $media-semi-small: 600px;
+    
     .column {
         display: inline-block;
-        padding: 20px 2% 20px 0;
+        padding: 20px 8% 20px 0;
         vertical-align: top;
+        box-sizing: border-box;
     }
     
     a, a:hover, a:visited, a:active {
@@ -16,21 +19,29 @@ footer {
     }
     
     .about {
-        width: 36%;
+        width: 100%;
+        @media (min-width: $media-semi-small) {
+            width: 40%;
+        }
         
         .content {
-            width: 70%;
             font-size: 12px;
         }
     }
     
     .nav {
-        width: 38%;
+        width: 50%;
+        @media (min-width: $media-semi-small) {
+            width: 38%;
+        }
+        
         
         ul {
             -webkit-column-count: 2;
             column-count: 2;
-            width: 70%;
+            @media (min-width: 700px) {
+                width: 70%;
+            }
             margin-left: 0;
             
             li {
@@ -40,10 +51,14 @@ footer {
     }
     
     .contact {
-        width: 16%;
+        width: 50%;
+        @media (min-width: $media-semi-small) {
+            width: 22%;
+        }
         
         .number {
             margin-bottom: 10px;
+            white-space: nowrap;
         }
     }
     

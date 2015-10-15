@@ -100,8 +100,13 @@
             }
             margin-top: 12px;
             .header {
+                
+                $media-letter-spacing: 400px;
                 text-transform: uppercase;
-                letter-spacing: 4px;
+                @media (min-width: $media-letter-spacing) {
+                    letter-spacing: 4px;
+                }
+                
                 margin-bottom: 36px;
                 .pre {
                     font-size: 18px;
@@ -114,7 +119,9 @@
                 }
                 .post {
                     font-size: 30px;
-                    letter-spacing: 6px;
+                    @media (min-width: $media-letter-spacing) {
+                        letter-spacing: 6px;
+                    }
                     line-height: 36px;
                 }
             }

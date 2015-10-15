@@ -98,8 +98,10 @@ input.form-control {
           width: 55%; } }
       .hero-container .geek-award .details .header {
         text-transform: uppercase;
-        letter-spacing: 4px;
         margin-bottom: 36px; }
+        @media (min-width: 400px) {
+          .hero-container .geek-award .details .header {
+            letter-spacing: 4px; } }
         .hero-container .geek-award .details .header .pre {
           font-size: 18px;
           line-height: 28px; }
@@ -109,8 +111,10 @@ input.form-control {
           line-height: 42px; }
         .hero-container .geek-award .details .header .post {
           font-size: 30px;
-          letter-spacing: 6px;
           line-height: 36px; }
+          @media (min-width: 400px) {
+            .hero-container .geek-award .details .header .post {
+              letter-spacing: 6px; } }
       .hero-container .geek-award .details .context {
         font-size: 13px;
         letter-spacing: 1px;

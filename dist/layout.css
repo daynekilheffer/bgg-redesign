@@ -122,29 +122,41 @@ footer {
   color: white; }
   footer .column {
     display: inline-block;
-    padding: 20px 2% 20px 0;
-    vertical-align: top; }
+    padding: 20px 8% 20px 0;
+    vertical-align: top;
+    box-sizing: border-box; }
   footer a, footer a:hover, footer a:visited, footer a:active {
     color: white;
     text-decoration: none; }
   footer .about {
-    width: 36%; }
+    width: 100%; }
+    @media (min-width: 600px) {
+      footer .about {
+        width: 40%; } }
     footer .about .content {
-      width: 70%;
       font-size: 12px; }
   footer .nav {
-    width: 38%; }
+    width: 50%; }
+    @media (min-width: 600px) {
+      footer .nav {
+        width: 38%; } }
     footer .nav ul {
       -webkit-column-count: 2;
       column-count: 2;
-      width: 70%;
       margin-left: 0; }
+      @media (min-width: 700px) {
+        footer .nav ul {
+          width: 70%; } }
       footer .nav ul li {
         margin-bottom: 6px; }
   footer .contact {
-    width: 16%; }
+    width: 50%; }
+    @media (min-width: 600px) {
+      footer .contact {
+        width: 22%; } }
     footer .contact .number {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      white-space: nowrap; }
   footer .title {
     font-size: 16px;
     font-weight: bold;

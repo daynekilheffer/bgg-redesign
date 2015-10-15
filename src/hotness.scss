@@ -3,6 +3,8 @@
 .hotness-container {
     margin: 30px 0;
     
+    $media-medium: 700px;
+    
     .button-row {
         text-align: center;
         
@@ -23,7 +25,11 @@
         .border {
             margin: 0 auto;
             height: 35px;
+            
             width: 59%;
+            @media (max-width: $media-medium) {
+                width: 85%;
+            }
             
             @mixin border-gradient($x, $y) {
                 background: radial-gradient(59% 40px ellipse at $x $y, #bbb, white);
@@ -39,6 +45,7 @@
         
         .game-carousel {
             padding: 60px 0;
+            text-align: center;
             .item {
                 display: inline-block;
                 
@@ -70,6 +77,27 @@
                         cursor: default;
                     }
                 }
+                
+                @media (max-width: $media-medium) {
+                    
+                    &:first-child, &:last-child {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        width: 32%;
+                    
+                        .game-image {
+                            width: 80%;
+                        }
+                    }
+                    &:nth-child(even) {
+                        width: 28%;
+                    
+                        .game-image {
+                            width: 70%;
+                        }
+                    }
+                }
             }
         }
         .active-game {
@@ -90,6 +118,7 @@
             }
             
             .stats {
+                display: flex;
                 width: 80%;
                 margin-left: auto;
                 margin-right: auto;

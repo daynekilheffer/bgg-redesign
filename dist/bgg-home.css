@@ -192,7 +192,7 @@ input.form-control {
     vertical-align: top; }
     @media (max-width: 800px) {
       .list-container .column-container {
-        margin-bottom: 20px; } }
+        margin-bottom: 36px; } }
     @media (min-width: 800px) {
       .list-container .column-container {
         width: 31%; } }
@@ -254,12 +254,16 @@ input.form-control {
       margin: 0 auto;
       height: 35px;
       width: 59%; }
+      @media (max-width: 700px) {
+        .hotness-container .game-carousel-row .border {
+          width: 85%; } }
       .hotness-container .game-carousel-row .border.top {
         background: radial-gradient(59% 40px ellipse at center top, #bbb, white); }
       .hotness-container .game-carousel-row .border.bottom {
         background: radial-gradient(59% 40px ellipse at center bottom, #bbb, white); }
     .hotness-container .game-carousel-row .game-carousel {
-      padding: 60px 0; }
+      padding: 60px 0;
+      text-align: center; }
       .hotness-container .game-carousel-row .game-carousel .item {
         display: inline-block;
         opacity: 0.6;
@@ -281,6 +285,17 @@ input.form-control {
           .hotness-container .game-carousel-row .game-carousel .item:nth-child(3) .game-image {
             width: 65%;
             cursor: default; }
+        @media (max-width: 700px) {
+          .hotness-container .game-carousel-row .game-carousel .item:first-child, .hotness-container .game-carousel-row .game-carousel .item:last-child {
+            display: none; }
+          .hotness-container .game-carousel-row .game-carousel .item:nth-child(3) {
+            width: 32%; }
+            .hotness-container .game-carousel-row .game-carousel .item:nth-child(3) .game-image {
+              width: 80%; }
+          .hotness-container .game-carousel-row .game-carousel .item:nth-child(even) {
+            width: 28%; }
+            .hotness-container .game-carousel-row .game-carousel .item:nth-child(even) .game-image {
+              width: 70%; } }
     .hotness-container .game-carousel-row .active-game {
       text-align: center;
       max-width: 520px;
@@ -294,6 +309,7 @@ input.form-control {
         line-height: 1.5em;
         color: #666; }
       .hotness-container .game-carousel-row .active-game .stats {
+        display: flex;
         width: 80%;
         margin-left: auto;
         margin-right: auto; }

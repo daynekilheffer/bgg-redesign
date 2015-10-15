@@ -7,7 +7,7 @@
         $hero-light: #F89E2E;
         $hero-dark: #E2600F;
         background: radial-gradient(farthest-corner at 20% 40%, $hero-light, $hero-dark);
-        height: 400px;
+        min-height: 400px;
         position: relative;
         box-shadow: 1px 0px 18px 1px rgba(0,0,0,0.6);
         
@@ -87,8 +87,10 @@
         $media-medium: 850px;
         color: white;
         padding: 2%;
+        padding-bottom: 0;
         @media (min-width: $media-medium) {
             padding: 30px;
+            padding-bottom: 0;
         }
         .details {
             display: inline-block;

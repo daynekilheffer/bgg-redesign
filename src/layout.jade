@@ -31,12 +31,14 @@ html(lang="en")
                                         button.btn.btn-default.btn-small login
                 nav
                     .page-container
-                        ul
-                            each label in navigation.items
-                                li
-                                    a(href='#')
-                                        span.highlight &nbsp;
-                                        span.label= label
+                        .dropdown
+                            .label Menu
+                            ul
+                                each label in navigation.items
+                                    li
+                                        a(href='#')
+                                            span.highlight &nbsp;
+                                            span.label= label
             main
                 block content
             footer

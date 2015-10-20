@@ -91,6 +91,63 @@ header {
     nav {
         background-color: white;
         padding-bottom: 20px;
+        position: relative;
+        
+        $media-dropdown: 600px;
+        
+        .dropdown > .label {
+            display: none;
+        }
+        
+        @media (max-width: $media-dropdown - 1) {
+            
+            @mixin hamburger($primary-color) {
+                background: linear-gradient(
+                    to bottom, 
+                    $primary-color, $primary-color 20%, 
+                    white 20%, white 40%, 
+                    $primary-color 40%, $primary-color 60%, 
+                    white 60%, white 80%, 
+                    $primary-color 80%, $primary-color 100%
+                );
+            }
+            
+            .dropdown {
+                display: inline-block;
+                > .label {
+                    display: block;
+                    margin-left: 20px;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        width: 1em;
+                        height: 15px;
+                        margin-left: 8px;
+                        @include hamburger(black);
+                    }
+                }
+                &:hover {
+                    
+                    > .label {
+                        color: $geek-primary;
+                        cursor: pointer;
+                        &:before {
+                            @include hamburger($geek-primary);
+                        }
+                    }
+                    
+                    > ul {
+                        display: block;
+                        min-width: 100px;
+                        margin-left: 1px;
+                        a {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
         
         ul {
             display: flex;
@@ -98,10 +155,14 @@ header {
             padding: 0;
             margin: 0 auto;
             // got some magic numbers I need to deal with
-            @media (min-width: 0px) and (max-width: 600px - 1) {
-                width: 95%;
+            @media (min-width: 0px) and (max-width: $media-dropdown - 1) {
+                position: absolute;
+                display: none;
+                z-index: 10;
+                background-color: white;
+                box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.6);
             }
-            @media (min-width: 600px) and (max-width: 800px - 1) {
+            @media (min-width: $media-dropdown) and (max-width: 800px - 1) {
                 width: 90%;
             }
             @media (min-width: 800px) {
@@ -111,6 +172,10 @@ header {
         li {
             display: inline-block;
             width: percentage(1/7);
+            @media (max-width: $media-dropdown - 1) {
+                display: block;
+                width: auto;
+            }
         }
         .highlight {
             $height: 8px;
@@ -118,9 +183,18 @@ header {
             height: $height;
             margin-top: -$height;
             background-color: #CCC;
+            @media (max-width: $media-dropdown - 1) {
+                margin-top: 0;
+                height: auto;
+                display: inline-block;
+                background-color: transparent;
+            }
         }
         .label {
             display: block;
+            @media (max-width: $media-dropdown - 1) {
+                display: inline-block;
+            }
             font-size: 16px;
             padding: 8px;
             text-align: center;

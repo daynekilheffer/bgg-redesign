@@ -87,7 +87,35 @@ header .login-form {
 
 header nav {
   background-color: white;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  position: relative; }
+  header nav .dropdown > .label {
+    display: none; }
+  @media (max-width: 599px) {
+    header nav .dropdown {
+      display: inline-block; }
+      header nav .dropdown > .label {
+        display: block;
+        margin-left: 20px; }
+        header nav .dropdown > .label:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 1em;
+          height: 15px;
+          margin-left: 8px;
+          background: linear-gradient(to bottom, black, black 20%, white 20%, white 40%, black 40%, black 60%, white 60%, white 80%, black 80%, black 100%); }
+      header nav .dropdown:hover > .label {
+        color: #FD8925;
+        cursor: pointer; }
+        header nav .dropdown:hover > .label:before {
+          background: linear-gradient(to bottom, #FD8925, #FD8925 20%, white 20%, white 40%, #FD8925 40%, #FD8925 60%, white 60%, white 80%, #FD8925 80%, #FD8925 100%); }
+      header nav .dropdown:hover > ul {
+        display: block;
+        min-width: 100px;
+        margin-left: 1px; }
+        header nav .dropdown:hover > ul a {
+          display: block; } }
   header nav ul {
     display: flex;
     justify-content: space-between;
@@ -95,7 +123,11 @@ header nav {
     margin: 0 auto; }
     @media (min-width: 0px) and (max-width: 599px) {
       header nav ul {
-        width: 95%; } }
+        position: absolute;
+        display: none;
+        z-index: 10;
+        background-color: white;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.6); } }
     @media (min-width: 600px) and (max-width: 799px) {
       header nav ul {
         width: 90%; } }
@@ -105,16 +137,29 @@ header nav {
   header nav li {
     display: inline-block;
     width: 14.2857142857%; }
+    @media (max-width: 599px) {
+      header nav li {
+        display: block;
+        width: auto; } }
   header nav .highlight {
     display: block;
     height: 8px;
     margin-top: -8px;
     background-color: #CCC; }
+    @media (max-width: 599px) {
+      header nav .highlight {
+        margin-top: 0;
+        height: auto;
+        display: inline-block;
+        background-color: transparent; } }
   header nav .label {
     display: block;
     font-size: 16px;
     padding: 8px;
     text-align: center; }
+    @media (max-width: 599px) {
+      header nav .label {
+        display: inline-block; } }
   header nav a, header nav a:visited, header nav a:link, header nav a:hover {
     text-decoration: none;
     color: black; }

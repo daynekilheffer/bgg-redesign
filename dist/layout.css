@@ -193,6 +193,7 @@ footer {
         width: 38%; } }
     footer .nav ul {
       -webkit-column-count: 2;
+      -moz-column-count: 2;
       column-count: 2;
       margin-left: 0; }
       @media (min-width: 700px) {

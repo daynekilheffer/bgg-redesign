@@ -237,6 +237,7 @@ input.form-control {
       font-size: 12px; }
     .list-container .column .content .list-content {
       -webkit-column-count: 2;
+      -moz-column-count: 2;
       column-count: 2;
       list-style: disc;
       list-style-position: inside;

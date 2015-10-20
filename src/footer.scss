@@ -38,6 +38,7 @@ footer {
         
         ul {
             -webkit-column-count: 2;
+            -moz-column-count: 2;
             column-count: 2;
             @media (min-width: 700px) {
                 width: 70%;

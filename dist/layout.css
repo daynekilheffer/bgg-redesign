@@ -11,7 +11,7 @@ body {
   margin: 0 auto;
   font-size: 14px;
   box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.7); }
-  @media (max-width: 1200px) {
+  @media (max-width: 1199px) {
     .root-container {
       box-shadow: none; } }
 
@@ -26,7 +26,7 @@ body {
 header .top-nav {
   background-color: #CCC;
   min-height: 75px; }
-  @media (min-width: 850px) {
+  @media (min-width: 950px) {
     header .top-nav {
       min-height: 105px; } }
 
@@ -59,25 +59,31 @@ header .search-form {
   margin-right: 18px; }
 
 header .login-form {
-  display: none; }
-  @media (min-width: 850px) {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: -18px;
+  margin-right: 2%; }
+  @media (max-width: 699px) {
     header .login-form {
-      display: inline-block;
-      align-self: flex-start;
-      margin-top: -18px;
-      margin-right: 2%; }
-      header .login-form input {
-        font-size: 12px; }
-      header .login-form button {
-        min-width: 60px; }
-      header .login-form .top-anchor {
-        background-color: #6E6E70;
-        padding: 16px 10px 12px;
-        border-bottom-right-radius: 8px;
-        border-bottom-left-radius: 8px;
-        box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.6); }
-      header .login-form .row {
-        white-space: nowrap; } }
+      display: none; } }
+  header .login-form .top-anchor {
+    background-color: #6E6E70;
+    padding: 16px 10px 12px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.6); }
+  header .login-form input {
+    font-size: 12px; }
+  header .login-form button {
+    min-width: 60px; }
+  header .login-form .row {
+    white-space: nowrap; }
+  @media (max-width: 949px) {
+    header .login-form .large {
+      display: none; } }
+  @media (min-width: 950px) {
+    header .login-form .mini {
+      display: none; } }
 
 header nav {
   background-color: white;

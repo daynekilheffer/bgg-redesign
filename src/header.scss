@@ -2,7 +2,8 @@
 
 header {
     $header-color: #CCC;
-    $media-medium: 850px;
+    $media-medium: 950px;
+    $media-small: 700px;
     
     $component-top-space: 18px;
     $component-bottom-space: 12px;
@@ -45,27 +46,45 @@ header {
         margin-right: 18px;
     }
     .login-form {
-        display: none;
+        
+        display: inline-block;
+        
+        @media (max-width: $media-small - 1) {
+            display: none;
+        }
+        
+        align-self: flex-start;
+        margin-top: -$component-top-space;
+        margin-right: 2%;
+        
+        .top-anchor {
+            background-color: #6E6E70;
+            padding: 16px 10px 12px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.6);
+            
+        }
+        
+        input {
+            font-size: 12px;
+        }
+        button {
+            min-width: 60px;
+        }
+        .row {
+            white-space: nowrap;
+        }
+        
+        @media (max-width: $media-medium - 1) {
+            .large {
+                display: none;
+            }
+        }
+        
         @media (min-width: $media-medium) {
-            display: inline-block;
-            align-self: flex-start;
-            margin-top: -$component-top-space;
-            margin-right: 2%;
-            input {
-                font-size: 12px;
-            }
-            button {
-                min-width: 60px;
-            }
-            .top-anchor {
-                background-color: #6E6E70;
-                padding: 16px 10px 12px;
-                border-bottom-right-radius: 8px;
-                border-bottom-left-radius: 8px;
-                box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.6);
-            }
-            .row {
-                white-space: nowrap;
+            .mini {
+                display: none;
             }
         }
     }
@@ -79,10 +98,10 @@ header {
             padding: 0;
             margin: 0 auto;
             // got some magic numbers I need to deal with
-            @media (min-width: 0px) and (max-width: 599px) {
+            @media (min-width: 0px) and (max-width: 600px - 1) {
                 width: 95%;
             }
-            @media (min-width: 600px) and (max-width: 799px) {
+            @media (min-width: 600px) and (max-width: 800px - 1) {
                 width: 90%;
             }
             @media (min-width: 800px) {

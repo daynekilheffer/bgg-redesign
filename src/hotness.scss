@@ -27,7 +27,7 @@
             height: 35px;
             
             width: 59%;
-            @media (max-width: $media-medium) {
+            @media (max-width: $media-medium - 1) {
                 width: 85%;
             }
             
@@ -78,7 +78,7 @@
                     }
                 }
                 
-                @media (max-width: $media-medium) {
+                @media (max-width: $media-medium - 1) {
                     
                     &:first-child, &:last-child {
                         display: none;

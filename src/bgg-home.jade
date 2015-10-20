@@ -38,17 +38,17 @@ block content
                     if column.type == "forum"
                         .column-container
                             .column
-                                .title !{column.title}
+                                .title!= column.title
                                 ul.content
                                     each item in column.items
                                         li.item
-                                            a.title(href=item.href) !{item.linkableTitle}
+                                            a.title(href=item.href)!=item.linkableTitle
                                             |  !{item.title}
                                             .sub-text= item.subText
                     if column.type == "lists"
                         .column-container
                             .column
-                                .title !{column.title}
+                                .title!= column.title
                                 .content
                                     .subtitle
                                         each list in column.lists
@@ -56,12 +56,12 @@ block content
                                             if list.active
                                                 - classes = "active"
                                             .subitem(class=classes)
-                                                a(href="#") !{list.name}
+                                                a(href="#")!= list.name
                                     ul.list-content
                                         each list in column.lists
                                             if list.active
                                                 each item in list.items
-                                                    li !{item}
+                                                    li!= item
     section.hotness-container
         .page-container
             .button-row

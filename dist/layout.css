@@ -9,37 +9,44 @@ body {
 .root-container {
   max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.7);
-  font-size: 14px; }
+  font-size: 14px;
+  box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.7); }
+  @media (max-width: 1200px) {
+    .root-container {
+      box-shadow: none; } }
 
 .page-container {
   max-width: 980px;
-  padding: 0 20px;
+  padding: 0 1%;
   margin: 0 auto; }
-
-header .top-nav .clear-login {
-  display: inline-block; }
-  header .top-nav .clear-login:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
+  @media (min-width: 800px) {
+    .page-container {
+      padding: 0 20px; } }
 
 header .top-nav {
-  background-color: #CCC; }
-  header .top-nav .clear-login {
-    width: 100%; }
+  background-color: #CCC;
+  min-height: 75px; }
+  @media (min-width: 850px) {
+    header .top-nav {
+      min-height: 105px; } }
+
+header .columns-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 4%;
+  padding-left: 2%;
+  padding-top: 18px; }
 
 header .brand {
   display: inline-block;
   font-family: sans-serif;
-  padding: 40px 0;
-  margin-right: 30px;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: bold;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  margin-right: 18px; }
   header .brand .geek {
     color: white;
     padding: 3px;
@@ -47,30 +54,48 @@ header .brand {
 
 header .search-form {
   display: inline-block;
-  margin-left: 15%; }
+  margin-bottom: 12px;
+  white-space: nowrap;
+  margin-right: 18px; }
 
 header .login-form {
-  display: inline-block;
-  float: right; }
-  header .login-form input {
-    font-size: 12px; }
-  header .login-form button {
-    min-width: 60px; }
-  header .login-form .top-anchor {
-    background-color: #6E6E70;
-    padding: 16px 10px 12px;
-    border-bottom-right-radius: 18px;
-    border-bottom-left-radius: 18px;
-    box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.6); }
+  display: none; }
+  @media (min-width: 850px) {
+    header .login-form {
+      display: inline-block;
+      align-self: flex-start;
+      margin-top: -18px;
+      margin-right: 2%; }
+      header .login-form input {
+        font-size: 12px; }
+      header .login-form button {
+        min-width: 60px; }
+      header .login-form .top-anchor {
+        background-color: #6E6E70;
+        padding: 16px 10px 12px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.6); }
+      header .login-form .row {
+        white-space: nowrap; } }
 
 header nav {
   background-color: white;
   padding-bottom: 20px; }
   header nav ul {
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
     padding: 0;
-    width: 80%;
     margin: 0 auto; }
+    @media (min-width: 0px) and (max-width: 599px) {
+      header nav ul {
+        width: 95%; } }
+    @media (min-width: 600px) and (max-width: 799px) {
+      header nav ul {
+        width: 90%; } }
+    @media (min-width: 800px) {
+      header nav ul {
+        width: 80%; } }
   header nav li {
     display: inline-block;
     width: 14.2857142857%; }
@@ -81,6 +106,7 @@ header nav {
     background-color: #CCC; }
   header nav .label {
     display: block;
+    font-size: 16px;
     padding: 8px;
     text-align: center; }
   header nav a, header nav a:visited, header nav a:link, header nav a:hover {
@@ -96,29 +122,41 @@ footer {
   color: white; }
   footer .column {
     display: inline-block;
-    padding: 20px 2% 20px 0;
-    vertical-align: top; }
+    padding: 20px 8% 20px 0;
+    vertical-align: top;
+    box-sizing: border-box; }
   footer a, footer a:hover, footer a:visited, footer a:active {
     color: white;
     text-decoration: none; }
   footer .about {
-    width: 36%; }
+    width: 100%; }
+    @media (min-width: 600px) {
+      footer .about {
+        width: 40%; } }
     footer .about .content {
-      width: 70%;
       font-size: 12px; }
   footer .nav {
-    width: 38%; }
+    width: 50%; }
+    @media (min-width: 600px) {
+      footer .nav {
+        width: 38%; } }
     footer .nav ul {
       -webkit-column-count: 2;
       column-count: 2;
-      width: 70%;
       margin-left: 0; }
+      @media (min-width: 700px) {
+        footer .nav ul {
+          width: 70%; } }
       footer .nav ul li {
         margin-bottom: 6px; }
   footer .contact {
-    width: 16%; }
+    width: 50%; }
+    @media (min-width: 600px) {
+      footer .contact {
+        width: 22%; } }
     footer .contact .number {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      white-space: nowrap; }
   footer .title {
     font-size: 16px;
     font-weight: bold;

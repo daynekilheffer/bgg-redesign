@@ -7,17 +7,25 @@ body {
 }
 
 .root-container {
-    max-width: 1200px;
+    $max-width: 1200px;
+    max-width: $max-width;
     margin: 0 auto;
-    box-shadow: 3px 3px 14px 0px rgba(0,0,0,0.7);
     font-size: 14px;
+    box-shadow: 3px 3px 14px 0px rgba(0,0,0,0.7);
+    @media (max-width: $max-width) {
+        box-shadow: none;
+    }
 }
 
 .page-container {
     max-width: $pageWidth;
-    padding: 0 20px;
+    padding: 0 1%;
     margin: 0 auto;
+    
+    @media (min-width: 800px) {
+        padding: 0 20px;
+    }
 }
 
-@import 'bgg-header';
-@import 'bgg-footer';
+@import 'header';
+@import 'footer';

@@ -1,0 +1,120 @@
+@import 'properties';
+
+header {
+    $header-color: #CCC;
+    $media-medium: 850px;
+    
+    $component-top-space: 18px;
+    $component-bottom-space: 12px;
+    
+    .top-nav {
+        background-color: $header-color;
+        min-height: 75px;
+        @media (min-width: $media-medium) {
+            min-height: 105px;
+        }
+    }
+    .columns-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 4%;
+        padding-left: 2%;
+        padding-top: $component-top-space;
+    }
+    .brand {
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: $component-bottom-space;
+        margin-right: 18px;
+        
+        .geek {
+            color: white;
+            padding: 3px;
+            background-color: $geek-primary;
+        }
+    }
+    .search-form {
+        display: inline-block;
+        margin-bottom: $component-bottom-space;
+        white-space: nowrap;
+        margin-right: 18px;
+    }
+    .login-form {
+        display: none;
+        @media (min-width: $media-medium) {
+            display: inline-block;
+            align-self: flex-start;
+            margin-top: -$component-top-space;
+            margin-right: 2%;
+            input {
+                font-size: 12px;
+            }
+            button {
+                min-width: 60px;
+            }
+            .top-anchor {
+                background-color: #6E6E70;
+                padding: 16px 10px 12px;
+                border-bottom-right-radius: 8px;
+                border-bottom-left-radius: 8px;
+                box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.6);
+            }
+            .row {
+                white-space: nowrap;
+            }
+        }
+    }
+    nav {
+        background-color: white;
+        padding-bottom: 20px;
+        
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0 auto;
+            // got some magic numbers I need to deal with
+            @media (min-width: 0px) and (max-width: 599px) {
+                width: 95%;
+            }
+            @media (min-width: 600px) and (max-width: 799px) {
+                width: 90%;
+            }
+            @media (min-width: 800px) {
+                width: 80%;
+            }
+        }
+        li {
+            display: inline-block;
+            width: percentage(1/7);
+        }
+        .highlight {
+            $height: 8px;
+            display: block;
+            height: $height;
+            margin-top: -$height;
+            background-color: #CCC;
+        }
+        .label {
+            display: block;
+            font-size: 16px;
+            padding: 8px;
+            text-align: center;
+        }
+        a, a:visited, a:link, a:hover {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: $geek-primary;
+            .highlight {
+                background-color: $geek-primary;
+            }
+        }
+    }
+}

@@ -28,7 +28,7 @@ input.form-control {
   margin-bottom: 30px; }
   .hero-container .carousel {
     background: radial-gradient(farthest-corner at 20% 40%, #F89E2E, #E2600F);
-    height: 400px;
+    min-height: 400px;
     position: relative;
     box-shadow: 1px 0px 18px 1px rgba(0, 0, 0, 0.6); }
     .hero-container .carousel .controls {
@@ -83,15 +83,25 @@ input.form-control {
       box-sizing: border-box; }
   .hero-container .geek-award {
     color: white;
-    padding: 30px; }
+    padding: 2%;
+    padding-bottom: 0; }
+    @media (min-width: 850px) {
+      .hero-container .geek-award {
+        padding: 30px;
+        padding-bottom: 0; } }
     .hero-container .geek-award .details {
       display: inline-block;
-      width: 55%;
+      position: relative;
       margin-top: 12px; }
+      @media (min-width: 850px) {
+        .hero-container .geek-award .details {
+          width: 55%; } }
       .hero-container .geek-award .details .header {
         text-transform: uppercase;
-        letter-spacing: 4px;
         margin-bottom: 36px; }
+        @media (min-width: 400px) {
+          .hero-container .geek-award .details .header {
+            letter-spacing: 4px; } }
         .hero-container .geek-award .details .header .pre {
           font-size: 18px;
           line-height: 28px; }
@@ -101,8 +111,10 @@ input.form-control {
           line-height: 42px; }
         .hero-container .geek-award .details .header .post {
           font-size: 30px;
-          letter-spacing: 6px;
           line-height: 36px; }
+          @media (min-width: 400px) {
+            .hero-container .geek-award .details .header .post {
+              letter-spacing: 6px; } }
       .hero-container .geek-award .details .context {
         font-size: 13px;
         letter-spacing: 1px;
@@ -111,7 +123,9 @@ input.form-control {
         margin-bottom: 24px; }
       .hero-container .geek-award .details .call-to-action {
         width: 85%;
-        text-align: right; }
+        text-align: right;
+        position: relative;
+        bottom: 10px; }
         .hero-container .geek-award .details .call-to-action a span {
           font-size: 12px;
           display: inline-block;
@@ -131,25 +145,28 @@ input.form-control {
           height: 0;
           vertical-align: bottom; }
     .hero-container .geek-award .icon {
-      display: inline-block;
-      vertical-align: top;
-      width: 45%;
-      text-align: center; }
-      .hero-container .geek-award .icon .text {
-        text-transform: uppercase;
-        margin-top: 60px; }
-        .hero-container .geek-award .icon .text .pre, .hero-container .geek-award .icon .text .post {
-          font-size: 28px;
-          letter-spacing: 3px; }
-        .hero-container .geek-award .icon .text .main {
-          font-size: 68px;
-          font-weight: bold;
-          line-height: 1em; }
-        .hero-container .geek-award .icon .text .post {
-          line-height: 1.4em; }
-        .hero-container .geek-award .icon .text .subtext {
-          line-height: 1.4em;
-          font-size: 13px; }
+      display: none; }
+      @media (min-width: 850px) {
+        .hero-container .geek-award .icon {
+          display: inline-block;
+          vertical-align: top;
+          width: 45%;
+          text-align: center; }
+          .hero-container .geek-award .icon .text {
+            text-transform: uppercase;
+            margin-top: 60px; }
+            .hero-container .geek-award .icon .text .pre, .hero-container .geek-award .icon .text .post {
+              font-size: 28px;
+              letter-spacing: 3px; }
+            .hero-container .geek-award .icon .text .main {
+              font-size: 68px;
+              font-weight: bold;
+              line-height: 1em; }
+            .hero-container .geek-award .icon .text .post {
+              line-height: 1.4em; }
+            .hero-container .geek-award .icon .text .subtext {
+              line-height: 1.4em;
+              font-size: 13px; } }
 
 .list-container {
   background: url(https://cf.geekdo-images.com/images/pic355125_lg.jpg) center 45%;
@@ -162,11 +179,27 @@ input.form-control {
     color: #fd7907; }
   .list-container .columns {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-flow: column; }
+    @media (max-width: 800px) {
+      .list-container .columns {
+        margin: 0 auto;
+        width: 80%; } }
+  @media (max-width: 800px) and (max-width: 400px) {
+    .list-container .columns {
+      width: 95%; } }
+    @media (min-width: 800px) {
+      .list-container .columns {
+        flex-flow: row; } }
   .list-container .column-container {
     display: inline-block;
-    vertical-align: top;
-    width: 31%; }
+    vertical-align: top; }
+    @media (max-width: 800px) {
+      .list-container .column-container {
+        margin-bottom: 36px; } }
+    @media (min-width: 800px) {
+      .list-container .column-container {
+        width: 31%; } }
   .list-container .column > .title {
     display: inline-block;
     background-color: black;
@@ -225,12 +258,16 @@ input.form-control {
       margin: 0 auto;
       height: 35px;
       width: 59%; }
+      @media (max-width: 700px) {
+        .hotness-container .game-carousel-row .border {
+          width: 85%; } }
       .hotness-container .game-carousel-row .border.top {
         background: radial-gradient(59% 40px ellipse at center top, #bbb, white); }
       .hotness-container .game-carousel-row .border.bottom {
         background: radial-gradient(59% 40px ellipse at center bottom, #bbb, white); }
     .hotness-container .game-carousel-row .game-carousel {
-      padding: 60px 0; }
+      padding: 60px 0;
+      text-align: center; }
       .hotness-container .game-carousel-row .game-carousel .item {
         display: inline-block;
         opacity: 0.6;
@@ -252,6 +289,17 @@ input.form-control {
           .hotness-container .game-carousel-row .game-carousel .item:nth-child(3) .game-image {
             width: 65%;
             cursor: default; }
+        @media (max-width: 700px) {
+          .hotness-container .game-carousel-row .game-carousel .item:first-child, .hotness-container .game-carousel-row .game-carousel .item:last-child {
+            display: none; }
+          .hotness-container .game-carousel-row .game-carousel .item:nth-child(3) {
+            width: 32%; }
+            .hotness-container .game-carousel-row .game-carousel .item:nth-child(3) .game-image {
+              width: 80%; }
+          .hotness-container .game-carousel-row .game-carousel .item:nth-child(even) {
+            width: 28%; }
+            .hotness-container .game-carousel-row .game-carousel .item:nth-child(even) .game-image {
+              width: 70%; } }
     .hotness-container .game-carousel-row .active-game {
       text-align: center;
       max-width: 520px;
@@ -265,6 +313,7 @@ input.form-control {
         line-height: 1.5em;
         color: #666; }
       .hotness-container .game-carousel-row .active-game .stats {
+        display: flex;
         width: 80%;
         margin-left: auto;
         margin-right: auto; }

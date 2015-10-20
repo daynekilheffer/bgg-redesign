@@ -1,9 +1,11 @@
-@import 'bgg-properties';
+@import 'properties';
 
 .list-container {
     background: url(https://cf.geekdo-images.com/images/pic355125_lg.jpg) center 45%;
     background-size: cover;
     padding: 20px 0;
+    
+    $media-stack: 800px;
     
     a, a:visited, a:active {
         color: $geek-primary;
@@ -17,12 +19,29 @@
     .columns {
         display: flex;
         justify-content: space-between;
+        
+        flex-flow: column;
+        @media (max-width: $media-stack) {
+            margin: 0 auto;
+            width: 80%;
+            @media (max-width: ($media-stack / 2)) {
+                width: 95%;
+            }
+        }
+        @media (min-width: $media-stack) {
+            flex-flow: row;
+        }
     }
     
     .column-container {
         display: inline-block;
         vertical-align: top;
-        width: 31%;
+        @media (max-width: $media-stack) {
+            margin-bottom: 36px;
+        }
+        @media (min-width: $media-stack) {
+            width: 31%;
+        }
     }
     
     .column {

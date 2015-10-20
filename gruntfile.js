@@ -1,6 +1,9 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
+        clean: {
+            build: ['dist']
+        },
         sass: {
             options: {
                 sourceMap: true
@@ -43,12 +46,13 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-jade');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-sass');
 
-    grunt.registerTask('build', ['sass', 'jade'])
+    grunt.registerTask('build', ['clean', 'sass', 'jade'])
     grunt.registerTask('serve', ['build', 'connect', 'watch'])
     grunt.registerTask('default', ['build']);
 
